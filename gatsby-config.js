@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "krings-cottages",
+     author: `Terry J Reynolds`,
+    description: `A business site for Kring's Cottages`,
+    siteUrl: `https://cranky-morse-0965e7.netlify.app`,
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
