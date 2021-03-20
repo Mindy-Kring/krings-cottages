@@ -1,8 +1,9 @@
 import * as React from "react";
 import NavHeader from "../components/navbar";
 import StyledBackgroundSection from "../components/landing";
-import LandingTwo from "../components/landingTwo";
+import LandingTwo from "../components/landingtwo";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
  

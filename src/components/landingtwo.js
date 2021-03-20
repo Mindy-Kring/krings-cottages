@@ -1,107 +1,96 @@
 
 import React from "react"
-import { useStaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
+import { StaticImage } from "gatsby-plugin-image"
 
+ const title = {
+  color: "#52bc77",
+  textAlign: "center",
+  paddingBottom: "1rem",
+  paddingTop: "2rem",
+  fontFamily: 'Rubik' 
+ };
 
-
-export default function LandingTwo() {
-const data = useStaticQuery(
-    graphql`
-     query {
-        file(relativePath: {eq: "DronePic.jpg"}) {
-    childImageSharp {
-      fluid(quality: 100, maxWidth: 500) {
-        base64
-        tracedSVG
-        srcWebp
-        srcSetWebp
-        originalImg
-        originalName
-      }
-    }
-  }
-      }
-    `
-  )
-  const TITLE = styled.h1`
-  color: #52bc77;
-  text-align: center;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  font-family: 'Rubik'; 
-`
-const P1 = styled.p`
-  color: black;
-  font-size: calc(6px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
-    font-family: 'Rubik';  
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-`
-const P2 = styled.p`
-  color: black;
-  font-size: calc(6px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
-    font-family: 'Rubik';
-    padding-top: 2rem;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-`
-const P3 = styled.p`
-  color: black;
-  font-size: calc(6px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
-    font-family: 'Rubik';
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-`
- const dronePicandList = {
-     display: "flex",
-     flexDirection: "row", 
-     justifyContent: "center",
- }
-
- const div1 = {
-  margin: "0 auto",
-  color: "black",
- }
-
- const div2 = {
-  margin: "0 auto",
-  padding: "20px",
-  color: "black",
-  backgroundColor: "yellow",
- }
+const P1 = {
+color: "black",
+  fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))", 
+    fontFamily: 'Rubik',  
+  width: "90%",
+  textAlign: "center",
+  margin: "0 auto"
+};
   
- 
+const P2 = {
+color: "black",
+  fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))", 
+    fontFamily: 'Rubik',
+    paddingTop: "2rem",
+  width: "90%",
+  textAlign: "center",
+  margin: "0 auto"
+};
+  
+const P3 = {
+color: "black",
+  fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))", 
+    fontFamily: 'Rubik',
+    paddingTop: "2rem",
+    paddingBottom: "2rem",
+  width: "90%",
+  textAlign: "center",
+  margin: "0 auto"
+};
+const h3Style = {
+   color: "#52bc77",
+   textAlign: "center",
+   marginTop: "20px"
+};
+const List = {
+  color: "black",
+  fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))", 
+  fontFamily: 'Rubik',
+};
+
+const container = {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-around",
+  flexWrap: "wrap"
+};
+  
+ const LandingTwo = () => {
+
     return (
 
-   <section>
-<TITLE>What We Offer </TITLE>
-        <P1>Kring's Cottages offers fourteen well-maintained housekeeping cottages located on the sandy shores of Sand Lake. The cottages are situated on 100 acres near Plevna, Ontario. Sand Lake is a wonderful place to swim, fish, ski, or just enjoy our natural-sand beach.</P1>
+   <div >
+   <h1 style={title}>What We Offer</h1>
+   <p style={P1}> Kring's Cottages offers fourteen well-maintained housekeeping cottages located on the sandy shores of Sand Lake. The cottages are situated on 100 acres near Plevna, Ontario. Sand Lake is a wonderful place to swim, fish, ski, or just enjoy our natural-sand beach.</p>
+    <p style= {P2}> 
+Each cottage overlooks the water and includes a 14-foot fibreglass boat at your own dock. Motors are also available to rent. Sand Lake is connected to Shawenegog Lake, which gives you two great lakes to fish for bass, walleye and pike.</p>
+     <p style= {P3}> 
+This third-generation business offers families and fishermen experiences and memories that are sure to
+last a lifetime.</p>
+<container style={container}>
 
-<P2>Each cottage overlooks the water and includes a 14-foot fibreglass boat at your own dock. Motors are also available to rent. Sand Lake is connected to Shawenegog Lake, which gives you two great lakes to fish for bass, walleye and pike.</P2>
-
-<P3>This third-generation business offers families and fishermen experiences and memories that are sure to
-last a lifetime. </P3> 
-
-<div style={dronePicandList}>
-
-    <div style={div1}>
-      <div>{data.file.childImageSharp.fluid}</div>
-  </div>
-<div style={div2}>
-    <p>Things To Do</p>
+   <StaticImage src="../images/DroneImg.jpg" alt="Drone view of the beach" placeholder="tracedSVG" width= "600px" />
+   
+   
+<div style={List}>
+     <h3 style={h3Style}>Things to Do</h3>
+     <ol>
+       <li>Fish all day</li>
+       <li>Rest on the beach</li>
+       <li>Take in beautiful sunsets</li>
+       <li>Spend time with friends and family</li>
+       <li>Sleep in</li>
+       <li>Sit by the campfire</li>
+       <li>Eat, drink and be merry</li>
+     </ol>
+</div> 
+   </container>  
 </div>
-
-  
-</div>
-   </section>
         
 );
     }
 
+export default LandingTwo;
     
