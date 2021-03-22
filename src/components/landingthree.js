@@ -92,7 +92,8 @@ Just a few of the things you can see and do
 </h5>
 <div style={gridContainer}>
 
-<div style={imgContainerOne}>
+<div style={imgContainerOne} data-sal="fade-in" data-sal-delay="300"
+  data-sal-easing="ease">
     <h3>Sunsets and Campfires</h3>
     <h6>Enjoy gorgeous sunsets and evenings by the campfire</h6>
     <StaticImage src="../images/Sunset.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg}/>
