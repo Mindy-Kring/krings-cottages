@@ -54,9 +54,10 @@ const container = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-around",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
+  marginBottom: "40px"
 };
-  
+
  const LandingTwo = () => {
 
     return (
