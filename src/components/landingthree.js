@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 
 const LandingThree = ({ className }) => {
+
  const data = useStaticQuery(
     graphql`
      query {
@@ -92,20 +93,20 @@ Just a few of the things you can see and do
 </h5>
 <div style={gridContainer}>
 
-<div style={imgContainerOne} data-sal="fade-in" data-sal-delay="300"
-  data-sal-easing="ease">
+<div style={imgContainerOne} id="one" data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" 
+ >
     <h3>Sunsets and Campfires</h3>
     <h6>Enjoy gorgeous sunsets and evenings by the campfire</h6>
     <StaticImage src="../images/Sunset.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg}/>
 </div>
-<div style={imgContainerTwo}>
+<div style={imgContainerTwo} data-sal="zoom-in" data-sal-easing="ease" data-sal-repeat data-sal-duration="800" >
     <h3>Cottages</h3>
     <h6>Our housekeeping cottages are attractive, cozy and clean and come in 2 and 3-bedroom models with all modern amenities</h6>
     <StaticImage src="../images/Cottage.jpg" alt="Cottage" placeholder="tracedSVG" style= {radiusedImg}/>
     
     <StaticImage src="../images/CottageInterior.jpg" alt="Cottage interior" placeholder="tracedSVG" style= {radiusedImg}/>
 </div>
-<div style={imgContainerThree}>
+<div style={imgContainerThree} data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" >
     <h3>Beach</h3>
     <h6>When you're not fishing, enjoy sunny days and tranquil evenings on the soft, natural-sand beach</h6>
     <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="tracedSVG" style= {radiusedImg} />

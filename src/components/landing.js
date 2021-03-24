@@ -59,7 +59,7 @@ const P = styled.p`
 <BackgroundImage
       Tag="section"
       className={className}
-      fluid={imageData}    
+      fluid={imageData}   
     >
 
     <H2>
