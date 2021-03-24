@@ -1,4 +1,5 @@
 import React from 'react'
+import { Nav } from 'react-bootstrap';
 import BtmNavbar from "../components/btmnavbar"
 
 const gridContainer = {
@@ -10,17 +11,16 @@ const gridContainer = {
 }
 const infoContainerOne = {
     color: "white",
-    backgroundColor: "yellow",
     padding: "20px"   
 }
 const infoContainerTwo = {
     color: "white",
-    backgroundColor: "blue",
     padding: "20px"
 }
 const infoContainerThree = {
+    display: "flex",
+    alignItems: "flex-end",
     color: "white",
-    backgroundColor: "green",
     padding: "20px"
 }
 const Footer = () => {
@@ -42,19 +42,28 @@ return (
            <a>Plevna, Ontario Canada</a>
        </li>
         <li>
-           <a>Tel. +16134790028</a>
+           <a href="tel:+1613-479-0028" style={{color: "#efedf5"}}>1-613-479-0028</a>
        </li>
         <li>
-           <a>krings_cottages@yahoo.com</a>
+           
+        <a
+          style={{ color: "#efedf5" }}
+          href="mailto:kringscottages@yahoo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          kringscottages@yahoo.com
+        </a>
+      
        </li>
    </ul>
 </div>
 <div style={infoContainerThree}>
-   <p>Website by <a href="https://terryjreynolds.dev" target="_blank"
-            >Terry
-            Reynolds</a>© {new Date().getFullYear()}
+   <p>Website by <a style={{color: "#efedf5"}} href="https://terryjreynolds.dev" target="_blank" rel="noopener noreferrer" 
+            >Terry J.
+            Reynolds </a>© {new Date().getFullYear()}
          </p>
-    <p>Built with <a href="https://www.gatsbyjs.com/" target="_blank" >Gatsby
+    <p> Built with <a style={{color: "#efedf5", display: "inline-block"}} href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatsby
            </a></p>
 </div>
 

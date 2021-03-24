@@ -2,8 +2,10 @@ import React from 'react'
 
 
 const btmNavbar = {
-    backgroundColor: "red",
-    color: "white"
+    backgroundColor: "black",
+    color: "white",
+    padding: "10px",
+    textAlign: "center"
 }
 const BtmNavbar = () => {
 
