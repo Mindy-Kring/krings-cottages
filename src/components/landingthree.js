@@ -42,13 +42,11 @@ const h3 = {
 }
 
 const imgContainerOne = {
-    backgroundColor: "white",
+   backgroundColor: "rgba(255, 255, 255, 0.7)",
     color: "black",
     textAlign: "center",
     borderRadius: "12px",
-    margin: "10px",
-    padding: "10px",
-    height:"40vw"
+    padding: "10px",  
 }
 const radiusedImg = {
     borderRadius: "12px",
@@ -56,23 +54,20 @@ const radiusedImg = {
 }
 
 const imgContainerTwo = {
-    backgroundColor: "#52bc77",
+    backgroundColor: "rgba(82,188,119, 0.7)",
     textAlign: "center",
     borderRadius: "12px",
-    margin: "10px",
-    padding: "10px"
+    padding: "10px",
 }
 const imgContainerThree = {
-    backgroundColor: "white",
+    backgroundColor: "rgba(255, 255, 255, 0.7)",
     color: "black",
     textAlign: "center",
     borderRadius: "12px",
-    margin: "10px",
     padding: "10px",
-    height:"40vw"
 }
 const subTitle = {
-  fontSize: "1.5vw",
+  fontSize: "1rem",
   marginBottom: "0"
 }
 const parallax = {
@@ -97,7 +92,7 @@ Just a few of the things you can see and do
  >
     <h3>Sunsets and Campfires</h3>
     <p style={subTitle}>Enjoy gorgeous sunsets and evenings by the campfire</p>
-    <StaticImage src="../images/Sunset.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg}/>
+    <StaticImage src="../images/Sunset1.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg} />
 </div>
 <div style={imgContainerTwo} data-sal="zoom-in" data-sal-easing="ease" data-sal-repeat data-sal-duration="800" >
     <h3>Cottages</h3>
@@ -108,7 +103,7 @@ Just a few of the things you can see and do
 </div>
 <div style={imgContainerThree} data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" >
     <h3>Beach</h3>
-    <p style={subTitle}>When you're not fishing, enjoy sunny days and tranquil evenings on the soft, natural-sand beach</p>
+    <p style={subTitle}>Enjoy sunny days and tranquil evenings on the soft, natural-sand beach</p>
     <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="tracedSVG" style= {radiusedImg} />
 </div>
 
