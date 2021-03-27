@@ -1,1 +1,30 @@
+.gridContainer1 {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-bottom: 5px;
+  background-color: black;
+}
 
+.landingThreeContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 10px;
+  background-color: red;
+}
+@media (max-width: 800px) {
+  .flex1,
+  .flex2 {
+    text-align: center;
+  }
+  /* .gridContainer1 {
+    flex-direction: column;
+  } */
+  /* .landingThreeContainer {
+    grid-template-rows: auto auto auto;
+  } */
+}
+
+.facebookIcon:hover {
+  opacity: 0.8;
+}

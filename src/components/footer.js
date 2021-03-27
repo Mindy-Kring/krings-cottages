@@ -1,51 +1,65 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 import BtmNavbar from "../components/btmnavbar"
 
-const gridContainer = {
-    display: "inline-grid",
-    gridTemplateRows: "auto auto",
-  gridTemplateColumns: "auto auto auto",
-    padding: "10px",
-    backgroundColor: "black"
-}
+
 const infoContainerOne = {
     color: "white",
-    padding: "20px"   
+    padding: "20px 20px 0 20px",
+     flex: "60%" 
 }
 const infoContainerTwo = {
+      textAlign: "center",
     color: "white",
-    padding: "20px"
+    padding: "20px 20px 0 20px",
+    flex: "40%"  
 }
-const infoContainerThree = {
-    display: "flex",
-    alignItems: "flex-end",
+const list ={
+      listStyleType: "none",
+  margin: "0 0 20px 0",
+  padding: "0",
+}
+const authorContainer = {
     color: "white",
-    padding: "20px"
+    backgroundColor: "black",
+    borderBottom: "solid 1px white"
+}
+const author ={
+   textAlign: "center"
 }
 const Footer = () => {
 
 return (
 <div>
-<div style={gridContainer}>
-<div style={infoContainerOne}>
+<div class="gridContainer1">
+<div class="flex1" style={infoContainerOne}>
     <h4>About Us</h4>
     <p>Kring's cottages is a family-owned and operated business that has been in the Kring family for three generations. John and Mindy Kring have been operating the business for over 32 years. Kring's is located about 3.5 hours East of Toronto and 2 hours West of Ottawa. We look forward to meeting you.</p>
-    <h4>Follow Us on Facebook</h4>
+    <div class="socialMedia">
+<h4>Follow Us</h4>
+    <div>    
+    <a 
+    class="facebookIcon"
+    aria-label="Link to Facebook page"
+    target="_blank"
+    rel= "noopener noreferrer"
+    href="https://www.facebook.com/pages/category/Beach-Resort/Krings-Cottages-137291916323768/"><FontAwesomeIcon  style={{fontSize: "2rem", color: "#4267B2"}} icon={faFacebookSquare} /></a>
+         </div>
+    </div>  
 </div>
-<div style={infoContainerTwo}>
+<div class="flex2" style={infoContainerTwo}>
    <h4>
        Kring's Cottages
    </h4>
-   <ul>
+   <ul style ={list}>
        <li>
            <a>Plevna, Ontario Canada</a>
        </li>
         <li>
            <a href="tel:+1613-479-0028" style={{color: "#efedf5"}}>1-613-479-0028</a>
        </li>
-        <li>
-           
+        <li>          
         <a
           style={{ color: "#efedf5" }}
           href="mailto:kringscottages@yahoo.com"
@@ -53,22 +67,17 @@ return (
           rel="noopener noreferrer"
         >
           kringscottages@yahoo.com
-        </a>
-      
+        </a>   
        </li>
-   </ul>
+   </ul> 
 </div>
-<div style={infoContainerThree}>
-   <p>Website by <a style={{color: "#efedf5"}} href="https://terryjreynolds.dev" target="_blank" rel="noopener noreferrer" 
+    </div>
+      <div style={authorContainer}>
+         <p style={author}>Website by <a  href="https://terryjreynolds.dev" target="_blank" rel="noopener noreferrer" 
             >Terry J.
             Reynolds </a>© {new Date().getFullYear()}
          </p>
-    <p> Built with <a style={{color: "#efedf5", display: "inline-block"}} href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatsby
-           </a></p>
 </div>
-
-
-    </div>
     <BtmNavbar />
 </div>
     

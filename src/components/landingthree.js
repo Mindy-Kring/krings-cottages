@@ -40,11 +40,7 @@ const h3 = {
     textAlign: "center",
     paddingTop: "10px"
 }
-const gridContainer = {
-    display: "inline-grid",
-  gridTemplateColumns: "auto auto auto",
-    padding: "10px"
-}
+
 const imgContainerOne = {
     backgroundColor: "white",
     color: "black",
@@ -52,7 +48,7 @@ const imgContainerOne = {
     borderRadius: "12px",
     margin: "10px",
     padding: "10px",
-    height:"60%"
+    height:"40vw"
 }
 const radiusedImg = {
     borderRadius: "12px",
@@ -73,7 +69,11 @@ const imgContainerThree = {
     borderRadius: "12px",
     margin: "10px",
     padding: "10px",
-    height:"60%"
+    height:"40vw"
+}
+const subTitle = {
+  fontSize: "1.5vw",
+  marginBottom: "0"
 }
 const parallax = {
     backgroundAttachment: "fixed"
@@ -91,24 +91,24 @@ return (
 <h5 style={h3}>
 Just a few of the things you can see and do
 </h5>
-<div style={gridContainer}>
+<div class="landingThreeContainer">
 
 <div style={imgContainerOne} id="one" data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" 
  >
     <h3>Sunsets and Campfires</h3>
-    <h6>Enjoy gorgeous sunsets and evenings by the campfire</h6>
+    <p style={subTitle}>Enjoy gorgeous sunsets and evenings by the campfire</p>
     <StaticImage src="../images/Sunset.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg}/>
 </div>
 <div style={imgContainerTwo} data-sal="zoom-in" data-sal-easing="ease" data-sal-repeat data-sal-duration="800" >
     <h3>Cottages</h3>
-    <h6>Our housekeeping cottages are attractive, cozy and clean and come in 2 and 3-bedroom models with all modern amenities</h6>
+    <p style={subTitle}>Our housekeeping cottages are attractive, cozy and clean and come in 2 and 3-bedroom models with all modern amenities</p>
     <StaticImage src="../images/Cottage.jpg" alt="Cottage" placeholder="tracedSVG" style= {radiusedImg}/>
     
     <StaticImage src="../images/CottageInterior.jpg" alt="Cottage interior" placeholder="tracedSVG" style= {radiusedImg}/>
 </div>
 <div style={imgContainerThree} data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" >
     <h3>Beach</h3>
-    <h6>When you're not fishing, enjoy sunny days and tranquil evenings on the soft, natural-sand beach</h6>
+    <p style={subTitle}>When you're not fishing, enjoy sunny days and tranquil evenings on the soft, natural-sand beach</p>
     <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="tracedSVG" style= {radiusedImg} />
 </div>
 
