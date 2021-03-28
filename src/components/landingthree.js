@@ -68,7 +68,7 @@ const imgContainerThree = {
 }
 const subTitle = {
   fontSize: "1rem",
-  marginBottom: "0"
+  marginBottom: "20px"
 }
 const parallax = {
     backgroundAttachment: "fixed"
@@ -92,19 +92,20 @@ Just a few of the things you can see and do
  >
     <h3>Sunsets and Campfires</h3>
     <p style={subTitle}>Enjoy gorgeous sunsets and evenings by the campfire</p>
-    <StaticImage src="../images/Sunset1.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg} />
+    <StaticImage src="../images/Sunset1.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+    <StaticImage src="../images/FirepitWeb.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
 </div>
 <div style={imgContainerTwo} data-sal="zoom-in" data-sal-easing="ease" data-sal-repeat data-sal-duration="800" >
     <h3>Cottages</h3>
     <p style={subTitle}>Our housekeeping cottages are attractive, cozy and clean and come in 2 and 3-bedroom models with all modern amenities</p>
-    <StaticImage src="../images/Cottage.jpg" alt="Cottage" placeholder="tracedSVG" style= {radiusedImg}/>
-    
-    <StaticImage src="../images/CottageInterior.jpg" alt="Cottage interior" placeholder="tracedSVG" style= {radiusedImg}/>
+    <StaticImage src="../images/Cottage.jpg" alt="Cottage" placeholder="tracedSVG" style= {radiusedImg} width={350}/>  
+    <StaticImage src="../images/CottageInterior.jpg" alt="Cottage interior" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
 </div>
 <div style={imgContainerThree} data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" >
     <h3>Beach</h3>
     <p style={subTitle}>Enjoy sunny days and tranquil evenings on the soft, natural-sand beach</p>
-    <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="tracedSVG" style= {radiusedImg} />
+    <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="tracedSVG" style= {radiusedImg} width={350} />
+    <StaticImage src="../images/BeachLong.jpg" alt="Long view of the beach" placeholder="tracedSVG" style= {radiusedImg} width={350} />
 </div>
 
 </div>
