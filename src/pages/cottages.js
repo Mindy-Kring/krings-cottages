@@ -1,12 +1,7 @@
 import React from "react"
-import NavHeader from "../components/navbar";
 import { StaticImage } from "gatsby-plugin-image"
-import Footer from "../components/footer";
 import styled from 'styled-components'
-
-
-const Cottages = () => {
-  const TITLE = styled.h1`
+ const TITLE = styled.h1`
   color: #52bc77;
   text-align: center;
   padding: 1rem 0 0 1rem;
@@ -19,6 +14,9 @@ const P = styled.p`
     padding-top: .5rem;
 text-Align: center;
 `
+
+const Cottages = () => {
+ 
 const cottageImgContainer = {
     borderRadius: "12px",
     padding: "10px",
@@ -45,85 +43,84 @@ const radiusedImg = {
 return (
 
 <div>
-<NavHeader />
-  <div>
+<div>
         <TITLE>Cottages</TITLE>
         <P>Click a cottage to see pics and details</P>
         
    </div>
-   <section class="cottageGrid">
-       <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+   <section className="cottageGrid">
+       <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
        
 
-<div class="cottageImgContainer" style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+<div  style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
 <h2 style={h2Style}>The Maples</h2>
 <StaticImage src="../images/TheMaples.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
 </div>
  
- <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+ <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
      <h2 style={h2Style}>The Birches</h2>
 <StaticImage src="../images/TheBirches.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
  </div>
 
-    <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+    <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
-          <div style={cottageImgContainer} class="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
 <StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
@@ -132,10 +129,15 @@ return (
    </section>
 
    <div style={buttonDivStyle}>
-       <button type="button" class="btn" style={buttonStyle}>View Rates</button>
+       <button type="button" className="btn" style={buttonStyle}>View Rates</button>
    </div>
-<Footer />
+
+
 </div>
+
+  
+
+
 
 
 )

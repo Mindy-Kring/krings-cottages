@@ -1,9 +1,7 @@
 import * as React from "react";
-import NavHeader from "../components/navbar";
 import StyledBackgroundSection from "../components/landing";
 import LandingTwo from "../components/landingtwo";
 import StyledLandingThree from "../components/landingthree";
-import Footer from "../components/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -14,13 +12,13 @@ const IndexPage = ({data}) => {
   
   return (
     <main>
-      <title>Home Page</title>
-      <NavHeader />
+<title>Home Page</title>
       <StyledBackgroundSection />  
       <LandingTwo />  
       <StyledLandingThree />
-      <Footer />
     </main>
+      
+    
   )
 }
 

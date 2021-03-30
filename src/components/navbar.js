@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
+import { Link } from 'gatsby';
 import { StaticImage } from "gatsby-plugin-image"
 
 
@@ -14,7 +15,19 @@ const brandSizing= {
 }
 
 
+
 const NavHeader = () => {
+    //set initial state to home
+    
+ const [name, setName] = useState("home");
+ console.log('name',name);
+
+ const toggleName = (id) => {
+    setName(id);
+  };
+ 
+ 
+
   
   return (
    
@@ -32,13 +45,18 @@ const NavHeader = () => {
     <Nav.Link href="tel" >1-613-479-0028</Nav.Link>    
     </Nav>
     <Nav className="mr-0">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Cottages</Nav.Link>
-      <Nav.Link href="#link">Rates</Nav.Link>
-      <Nav.Link href="#link">Gallery</Nav.Link>
-      <Nav.Link href="#link">Directions</Nav.Link>
-      <Nav.Link href="#link">Contact</Nav.Link>
-      <Nav.Link href="#link">Admin</Nav.Link> 
+      <Link to="/" className="nav-link" style={name === "home" ? {color: "white"}:
+      null} onClick={() => {toggleName("home")}}>Home</Link>
+
+      <Link to="/cottages" className="nav-link"  style={name === "cottages" ? {color: "white"}:
+      null} onClick={() => {toggleName("cottages")}}>Cottages</Link>
+      {/* <Nav.Link className={name === "cottages" ? "activeNavLink" :
+       null} onClick={() => {toggleName("cottages")}} href="/cottages">Cottages</Nav.Link> */}
+      <Nav.Link href="/Rates">Rates</Nav.Link>
+      <Nav.Link href="/Gallery">Gallery</Nav.Link>
+      <Nav.Link href="/Directions">Directions</Nav.Link>
+      <Nav.Link href="/Contact">Contact</Nav.Link>
+      <Nav.Link href="/Admin">Admin</Nav.Link> 
     </Nav>
   </Navbar.Collapse>
 </Navbar>

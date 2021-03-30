@@ -27,21 +27,28 @@ html {
   padding: 10px;
 }
 .cottageImgContainer1:hover {
-  animation: shake 0.2s;
+  animation: shake 0.1s;
   background-color: #52bc77;
+  color: white;
 }
 
+.activeNavLink {
+  background-color: white;
+}
+.inactiveNavLink {
+  background-color: #52bc77;
+}
 @keyframes shake {
   0% {
-    transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -1px) rotate(-0.2deg);
     background-color: #8ed6a7;
   }
   50% {
-    transform: translate(1px, 0px) rotate(1deg);
+    transform: translate(1px, 0px) rotate(0.2deg);
     background-color: #6ec98e;
   }
   100% {
-    transform: translate(2px, 2px) rotate(0deg);
+    transform: translate(1.5px, 0.5px) rotate(0deg);
     background-color: #52bc77;
   }
 }
