@@ -2,6 +2,9 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+
+
+ const LandingTwo = () => {
  const title = {
   color: "#52bc77",
   textAlign: "center",
@@ -58,7 +61,6 @@ const container = {
   marginBottom: "40px"
 };
 
- const LandingTwo = () => {
 
     return (
 
@@ -70,7 +72,7 @@ Each cottage overlooks the water and includes a 14-foot fibreglass boat at your 
      <p style= {P3}> 
 This third-generation business offers families and fishermen experiences and memories that are sure to
 last a lifetime.</p>
-<container style={container}>
+<div style={container}>
 
    <StaticImage src="../images/DroneImg.jpg" alt="Drone view of the beach" placeholder="tracedSVG" width= "600px" />
    
@@ -87,7 +89,7 @@ last a lifetime.</p>
        <li>Eat, drink and be merry</li>
      </ol>
 </div> 
-   </container>  
+   </div>  
 </div>
         
 );

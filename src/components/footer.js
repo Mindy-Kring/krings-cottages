@@ -4,7 +4,10 @@ import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 import BtmNavbar from "../components/btmnavbar"
 
 
-const infoContainerOne = {
+
+const Footer = () => {
+
+    const infoContainerOne = {
     color: "white",
     padding: "20px 20px 0 20px",
      flex: "60%" 
@@ -28,19 +31,18 @@ const authorContainer = {
 const author ={
    textAlign: "center"
 }
-const Footer = () => {
 
 return (
 <div>
-<div class="gridContainer1">
-<div class="flex1" style={infoContainerOne}>
+<div className="gridContainer1">
+<div className="flex1" style={infoContainerOne}>
     <h4>About Us</h4>
     <p>Kring's cottages is a family-owned and operated business that has been in the Kring family for three generations. John and Mindy Kring have been operating the business for over 32 years. Kring's is located about 3.5 hours East of Toronto and 2 hours West of Ottawa. We look forward to meeting you.</p>
-    <div class="socialMedia">
+    <div className="socialMedia">
 <h4>Follow Us</h4>
     <div>    
     <a 
-    class="facebookIcon"
+    className="facebookIcon"
     aria-label="Link to Facebook page"
     target="_blank"
     rel= "noopener noreferrer"
@@ -48,7 +50,7 @@ return (
          </div>
     </div>  
 </div>
-<div class="flex2" style={infoContainerTwo}>
+<div className="flex2" style={infoContainerTwo}>
    <h4>
        Kring's Cottages
    </h4>

@@ -86,7 +86,7 @@ return (
 <h5 style={h3}>
 Just a few of the things you can see and do
 </h5>
-<div class="landingThreeContainer">
+<div className="landingThreeContainer">
 
 <div style={imgContainerOne} id="one" data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" 
  >

@@ -4,6 +4,8 @@ import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 
 
+
+
 const BackgroundSection = ({ className }) => {
     const data = useStaticQuery(
     graphql`
@@ -24,27 +26,7 @@ const BackgroundSection = ({ className }) => {
     `
   )
 
-  const TITLE = styled.h1`
-  color: white;
-  text-align: center;
-  padding-bottom: 1rem;
-  font-family: 'Rubik'; 
-`
-        const H2 = styled.h2`
-  color: white;
-  padding-top: 8rem;
-width: 100%;
-height: 1000px;
-  text-align: center; 
-`
-const P = styled.p`
-  color: white;
-  font-size: calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
-    font-family: 'Rubik';
-    padding-top: 2rem;
-  width: 50%;
-  margin: 0 auto;
-`
+
  const buttonStyle = {
    backgroundColor: "#52bc77",
    borderRadius: "12px", 
@@ -62,12 +44,15 @@ const P = styled.p`
       fluid={imageData}   
     >
 
-    <H2>
+    <WRAPPER>
         <TITLE>Kring's Cottages </TITLE>
         <P>Fishing, swimming, cottages and beaches located on 100-acres of Canadian landscape. Come experience the warm, sandy shores of Sand Lake, Ontario.</P>
-        <button type="button" class="btn" style={buttonStyle}>View Cottages</button>
-   </H2>    
+        <button type="button" className="btn" style={buttonStyle}>View Cottages</button>
+   </WRAPPER>    
     </BackgroundImage>
+
+
+
 
 );
     }
@@ -80,5 +65,26 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-repeat: repeat-y;
   background-size: cover;
 `
-
+  const TITLE = styled.h2`
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: 'Rubik';
+  font-size: 2.8rem; 
+`
+        const WRAPPER = styled.h1`
+  color: white;
+  padding-top: 8rem;
+width: 100%;
+height: 1000px;
+  text-align: center; 
+`
+const P = styled.p`
+  color: white;
+  font-size: calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
+    font-family: 'Rubik';
+    padding-top: 2rem;
+  width: 50%;
+  margin: 0 auto;
+`
 export default StyledBackgroundSection

@@ -50,13 +50,22 @@ const NavHeader = () => {
 
       <Link to="/cottages" className="nav-link"  style={name === "cottages" ? {color: "white"}:
       null} onClick={() => {toggleName("cottages")}}>Cottages</Link>
-      {/* <Nav.Link className={name === "cottages" ? "activeNavLink" :
-       null} onClick={() => {toggleName("cottages")}} href="/cottages">Cottages</Nav.Link> */}
-      <Nav.Link href="/Rates">Rates</Nav.Link>
-      <Nav.Link href="/Gallery">Gallery</Nav.Link>
-      <Nav.Link href="/Directions">Directions</Nav.Link>
-      <Nav.Link href="/Contact">Contact</Nav.Link>
-      <Nav.Link href="/Admin">Admin</Nav.Link> 
+      
+      <Link to="/rates" className="nav-link"  style={name === "rates" ? {color: "white"}:
+      null} onClick={() => {toggleName("rates")}}>Rates</Link>
+
+      <Link to="/gallery" className="nav-link"  style={name === "gallery" ? {color: "white"}:
+      null} onClick={() => {toggleName("gallery")}}>Gallery</Link>
+      
+      <Link to="/directions" className="nav-link"  style={name === "directions" ? {color: "white"}:
+      null} onClick={() => {toggleName("directions")}}>Directions</Link>
+
+      <Link to="/contact" className="nav-link"  style={name === "contact" ? {color: "white"}:
+      null} onClick={() => {toggleName("contact")}}>Contact</Link>
+      
+      <Link to="/admin/" className="nav-link"  style={name === "admin" ? {color: "white"}:
+      null} onClick={() => {toggleName("admin")}}>Admin</Link>
+      
     </Nav>
   </Navbar.Collapse>
 </Navbar>

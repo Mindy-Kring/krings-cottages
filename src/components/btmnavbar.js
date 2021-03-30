@@ -1,14 +1,15 @@
 import React from 'react'
 
 
-const btmNavbar = {
+
+const BtmNavbar = () => {
+
+    const btmNavbar = {
     backgroundColor: "black",
     color: "white",
     padding: "10px",
     textAlign: "center"
 }
-const BtmNavbar = () => {
-
 
 
 return (
