@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
  
 // markup
 const IndexPage = ({data}) => {
-  
+     
   return (
     <main>
 <title>Home Page</title>

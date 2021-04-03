@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-family: "Rubik";
 }
@@ -37,6 +36,24 @@ html {
 }
 .inactiveNavLink {
   background-color: #52bc77;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+#arrowUp {
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+#arrowUp:hover {
+  color: #52bc77;
+  font-size: 2.2rem;
+  opacity: 1;
 }
 @keyframes shake {
   0% {
