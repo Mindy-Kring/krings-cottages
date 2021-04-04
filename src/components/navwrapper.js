@@ -4,8 +4,9 @@ import Footer from '../components/footer';
 import ScrollTopBtn from '../components/scrollTopBtn'
 
 const NavHeaderWrapper = ({ children }) => (
+
   <>
-  <NavHeader />
+  <NavHeader location={window.location.pathname} />
     {children}
     <ScrollTopBtn />
     <Footer />

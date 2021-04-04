@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 import styled from 'styled-components'
  const TITLE = styled.h1`
   color: #52bc77;
@@ -32,9 +33,9 @@ const radiusedImg = {
  const buttonStyle = {
    backgroundColor: "#52bc77",
    borderRadius: "12px", 
-  boxShadow: "2px 2px white",
-  margin: "2rem 0 2rem 0",
- } 
+   border: "ridge white 2px", 
+  marginTop: "3rem"
+ }  
  const buttonDivStyle = {
      display: "flex",
      justifyContent: "center",
@@ -57,79 +58,79 @@ return (
 
 <div  style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
 <h2 style={h2Style}>The Maples</h2>
-<StaticImage src="../images/TheMaples.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<StaticImage src="../images/TheMaples.jpg" alt="the Maples" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
 </div>
  
  <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
      <h2 style={h2Style}>The Birches</h2>
-<StaticImage src="../images/TheBirches.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<StaticImage src="../images/TheBirches.jpg" alt="the Birches" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
  </div>
 
     <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Cedarview</h2>
+<StaticImage src="../images/TheCedarview.jpg" alt="the Cedarview" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Brown</h2>
+<StaticImage src="../images/TheBrown.jpg" alt="the Brown" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Sandpit</h2>
+<StaticImage src="../images/TheSandpit.jpg" alt="the Sandpit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Hall</h2>
+<StaticImage src="../images/TheHall.jpg" alt="the Hall" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Tamarack</h2>
+<StaticImage src="../images/TheTamarack.jpg" alt="the Tamarack" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Fireplace</h2>
+<StaticImage src="../images/TheFireplace.jpg" alt="the Fireplace" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Lakeview</h2>
+<StaticImage src="../images/TheLakeview.jpg" alt="the Lakeview" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Pines</h2>
+<StaticImage src="../images/ThePines.jpg" alt="the Pines" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Shady Rest</h2>
+<StaticImage src="../images/TheShadyRest.jpg" alt="the Shady Rest" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The Old Rocky Point</h2>
+<StaticImage src="../images/TheOldRockyPoint.jpg" alt="the Old Rocky Point" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>The New Rocky Point</h2>
+<StaticImage src="../images/TheNewRockyPoint.jpg" alt="the New Rocky Point" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+           <h2 style={h2Style}>Leo's Place</h2>
+<StaticImage src="../images/LeosPlace.jpg" alt="Leo's Place" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
        </div>
  
 
    </section>
 
    <div style={buttonDivStyle}>
-       <button type="button" className="btn" style={buttonStyle}>View Rates</button>
+       <Link to="/rates" className="nav-link" ><button type="button" className="btn" style={buttonStyle}>View Rates</button></Link>
    </div>
 
 

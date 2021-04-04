@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 
@@ -30,9 +30,8 @@ const BackgroundSection = ({ className }) => {
  const buttonStyle = {
    backgroundColor: "#52bc77",
    borderRadius: "12px", 
-  boxShadow: "2px 2px white",
+   border: "ridge white 2px", 
   marginTop: "3rem"
- 
  }  
    // Set ImageData.
   const imageData = data.file.childImageSharp.fluid
@@ -47,7 +46,9 @@ const BackgroundSection = ({ className }) => {
     <WRAPPER>
         <TITLE>Kring's Cottages </TITLE>
         <P>Fishing, swimming, cottages and beaches located on 100-acres of Canadian landscape. Come experience the warm, sandy shores of Sand Lake, Ontario.</P>
-        <button type="button" className="btn" style={buttonStyle}>View Cottages</button>
+
+         <Link to="/cottages" className="nav-link" ><button type="button" className="btn" style={buttonStyle}>View Cottages</button></Link>
+        
    </WRAPPER>    
     </BackgroundImage>
 

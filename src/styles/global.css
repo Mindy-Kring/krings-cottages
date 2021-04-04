@@ -4,6 +4,7 @@
 html {
   font-family: "Rubik";
 }
+
 .gridContainer1 {
   display: flex;
   flex-direction: row;
