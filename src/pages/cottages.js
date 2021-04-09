@@ -52,13 +52,17 @@ return (
    <section className="cottageGrid">
        <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Elms</h2>
-<StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+
+<Link to="/TheElms"><StaticImage src="../images/TheElms.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
+
        </div>
        
 
 <div  style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
 <h2 style={h2Style}>The Maples</h2>
-<StaticImage src="../images/TheMaples.jpg" alt="the Maples" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+
+<Link to="/TheMaples"><StaticImage src="../images/TheMaples.jpg" alt="the Maples" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
+
 </div>
  
  <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">

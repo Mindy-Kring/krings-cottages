@@ -60,8 +60,10 @@ setName(currentPage);
       <Link to="/contact" className="nav-link"  style={name === "/contact" ? {color: "white"}:
       null}>Contact</Link>
       
-      <Link to="/admin" className="nav-link"  style={name === "/admin" ? {color: "white"}:
-      null}>Admin</Link>
+      <Nav.Link href="/admin/" className="nav-link"  style={name === "/admin" ? {color: "white"}:
+      null}>Admin</Nav.Link>    
+      {/* <Link to="/admin/" className="nav-link"  style={name === "/admin" ? {color: "white"}:
+      null}>Admin</Link> */}
       
     </Nav>
   </Navbar.Collapse>
