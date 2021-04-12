@@ -56,7 +56,7 @@ return (
    </h4>
    <ul style ={list}>
        <li>
-           <a>Plevna, Ontario Canada</a>
+           <p>Plevna, Ontario Canada</p>
        </li>
         <li>
            <a href="tel:+1613-479-0028" style={{color: "#efedf5"}}>1-613-479-0028</a>
