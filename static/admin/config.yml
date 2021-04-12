@@ -6,9 +6,9 @@ media_folder: images/uploads
 public_folder: images/uploads
 
 collections:
-  - name: "TheElms"
-    label: "The Elms"
-    folder: "src/markdown-pages/TheElms"
+  - name: "cottage-details"
+    label: "Cottage Details"
+    folder: "src/markdown-pages/cottage-details"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
