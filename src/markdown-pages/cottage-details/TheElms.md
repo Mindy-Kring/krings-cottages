@@ -1,10 +1,10 @@
 ---
 layout: The Elms
-title: "The Elms"
-slug: "/TheElms"
-folder: "./markdown-pages/cottage-details"
+title: The Elms
+slug: /TheElms
+folder: ./markdown-pages/cottage-details
 description: Hello World Two-bedroom Cottage
-ExteriorImage: ./src/images/TheElms.jpg
+ExteriorImage: images/uploads/attachment-1-4-1-web.jpeg
 ---
 
 > _This article explains a method for adding a scroll to top component to your react/Gatsby app_
