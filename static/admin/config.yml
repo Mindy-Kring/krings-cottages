@@ -10,7 +10,9 @@ collections:
     label: "Cottage Details"
     folder: "src/markdown-pages/cottage-details"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Exterior Image", name: "ExteriorImage", widget: "image" }
