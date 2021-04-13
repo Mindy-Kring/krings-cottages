@@ -19,6 +19,7 @@ module.exports = {
       path: `${__dirname}/src/markdown-pages`,
     },
   },
+  `gatsby-plugin-sharp`,
       {
     resolve: `gatsby-transformer-remark`,
     options: {
@@ -31,7 +32,17 @@ module.exports = {
       // GitHub Flavored Markdown mode (default: true)
       gfm: true,
       // Plugins configs
-      plugins: [],
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            // It's important to specify the maxWidth (in pixels) of
+            // the content container as this plugin uses this as the
+            // base for generating different widths of each image.
+            maxWidth: 590,
+          },
+        },
+      ],
     },
   },
     {
@@ -39,9 +50,7 @@ module.exports = {
       options: {
         icon: "src/images/icon.png",
       },
-    },
-    
-    "gatsby-plugin-sharp",
+    }, 
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
