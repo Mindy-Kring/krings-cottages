@@ -29,7 +29,7 @@ export const pageQuery = graphql`
   query($slug: String!) {
    markdownRemark(frontmatter: { slug: { eq: $slug } })  {
     frontmatter {
-     gallery {
+     samplePics {
         image {
           childImageSharp {
             gatsbyImageData(width: 400)
