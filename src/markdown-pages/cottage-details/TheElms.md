@@ -2,7 +2,7 @@
 title: The Elms
 slug: /TheElms
 folder: ./markdown-pages/cottage-details
-gallery:
+samplePics:
   - image: ../../images/uploads/TheElms.jpg
     imageAlt: Exterior view of the Elms cottage.
   - image: ../../images/uploads/Lake.jpg

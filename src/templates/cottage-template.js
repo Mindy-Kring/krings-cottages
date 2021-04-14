@@ -7,7 +7,7 @@ export default function CottageTemplate({data}) {
 
   const mr = data.markdownRemark.frontmatter;
  //map over all queried images and dynamically return as GatsbyImage elements 
- const samplePics = mr.gallery.map(pic => { 
+ const samplePics = mr.samplePics.map(pic => { 
    let image = getImage(pic.image.childImageSharp);
    let picAlt = pic.imageAlt;
   return <GatsbyImage image={image} alt={picAlt} />
