@@ -6,28 +6,36 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 export default function CottageTemplate({data}) {
 
   const mr = data.markdownRemark.frontmatter;
-  const image = getImage(mr.featured.childImageSharp)
- 
+ //map over all queried images and dynamically return as GatsbyImage elements 
+ const samplePics = mr.gallery.map(pic => { 
+   let image = getImage(pic.image.childImageSharp);
+   let picAlt = pic.imageAlt;
+  return <GatsbyImage image={image} alt={picAlt} />
+})
 
   return (
     <section>
-    
       {mr.title}
    <div>{mr.title === "The Elms" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</div> 
- <GatsbyImage image={image} alt="picture goes here" />
+   <div className="samplePics">
+       {samplePics}  
+   </div>
     
     </section>
   )
 }
-
+//gallery returns an array of image objects
 export const pageQuery = graphql`
   query($slug: String!) {
    markdownRemark(frontmatter: { slug: { eq: $slug } })  {
     frontmatter {
-      featured {
-        childImageSharp {
-          gatsbyImageData(width: 400)
+     gallery {
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 400)
+          }
         }
+        imageAlt
       }
       title
     }
