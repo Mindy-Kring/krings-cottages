@@ -7,13 +7,13 @@ export default function CottageTemplate({data}) {
 
   const mr = data.markdownRemark.frontmatter;
   const image = getImage(mr.featured.childImageSharp)
-  
+ 
 
   return (
     <section>
-      
+    
       {mr.title}
-   <div>{mr.slug === "/TheElms" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</div> 
+   <div>{mr.title === "The Elms" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</div> 
  <GatsbyImage image={image} alt="picture goes here" />
     
     </section>
