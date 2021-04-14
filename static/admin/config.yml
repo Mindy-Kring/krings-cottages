@@ -27,11 +27,5 @@ collections:
                 name: "imageAlt",
                 widget: "string",
               },
-              { label: "Image", name: "image", widget: "image" },
-              {
-                label: "Image Description",
-                name: "imageAlt",
-                widget: "string",
-              },
             ],
         }
