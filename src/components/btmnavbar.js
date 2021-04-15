@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
 
 
 const BtmNavbar = () => {
@@ -11,13 +11,12 @@ const BtmNavbar = () => {
     textAlign: "center"
 }
 
-
 return (
 
     <div>
 
 <section style={btmNavbar}>
-<p>Home | Cottages | Rates | Gallery | Directions | Contact | Admin</p>
+<p><Link to="/">Home |</Link><Link to="/cottages"> Cottages |</Link><Link to="/rates"> Rates | </Link><Link to="/gallery"> Gallery |</Link><Link to="/directions"> Directions |</Link><Link to="/contact"> Contact |</Link><Link to="/admin/"> Admin</Link></p>
 </section>
 
     </div>

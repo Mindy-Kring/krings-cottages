@@ -5,6 +5,12 @@ folder: ./markdown-pages/cottage-details
 samplePics:
   - image: ../../images/uploads/TheElms.jpg
     imageAlt: Exterior view of the Elms cottage.
-  - image: ../../images/uploads/Lake.jpg
+  - image: ../../images/uploads/ElmsLake.jpg
     imageAlt: A view of the lake from the Elms cottage.
+  - image: ../../images/uploads/ElmsFirepit.jpg
+    imageAlt: A view of the firepit from the Elms cottage.
+  - image: ../../images/uploads/ElmsKitchen.jpg
+    imageAlt: A view of the kitchen of the Elms cottage.
+  - image: ../../images/uploads/ElmsBathroom.jpg
+    imageAlt: A view of the bathroom of the Elms cottage.
 ---

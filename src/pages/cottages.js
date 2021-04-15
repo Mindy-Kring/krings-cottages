@@ -127,7 +127,7 @@ return (
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>Leo's Place</h2>
-<StaticImage src="../images/LeosPlace.jpg" alt="Leo's Place" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/LeosPlace"><StaticImage src="../images/LeosPlace.jpg" alt="Leo's Place" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
  
 

@@ -8,6 +8,7 @@ html {
 .gridContainer1 {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
   padding: 10px;
   padding-bottom: 5px;
   background-color: black;
@@ -38,7 +39,22 @@ html {
 .inactiveNavLink {
   background-color: #52bc77;
 }
-
+.samplePics {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.styledSamplePics {
+  border-radius: 5px;
+  border: 5px solid #52bc77;
+  box-shadow: 3px 5px 5px 3.5px grey;
+}
+.cottageDetailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 #scrollTopBtn {
   position: fixed;
   bottom: 20px;
@@ -72,7 +88,7 @@ html {
 }
 
 /*---------------------MEDIA QUERIES--------------------------------*/
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .flex1,
   .flex2 {
     text-align: center;
@@ -85,6 +101,15 @@ html {
     grid-template-rows: auto auto auto;
   }
   .cottageGrid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .cottageDetailsContainer {
+    grid-template-columns: auto;
+    grid-gap: 1.5rem;
+    padding: 10px;
+  }
+  .samplePics {
     grid-template-columns: auto;
   }
 }
