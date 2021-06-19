@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -22,12 +23,48 @@ const P = styled.p`
 text-Align: center;
 `
 export default function CottageTemplate({data}) {
+
+
+  //establish state
+  const [modalState, setModalState] = useState(false);
+  const [selectedImg, setSelectedImg] = useState('');
+  const [imageAlt, setImageAlt]= useState('');
+console.log('states', selectedImg);
+
+//onClick of a cottage detail picture
+
+  const setSelection = (img) => {
+    //check the viewport width
+ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+ console.log('vw', vw);
+ //only open modal if vw is greater than 600px
+if (vw > 600) {
+ console.log('allImages', data.allFile.edges[0].node);
+    console.log('img', data.markdownRemark.frontmatter.name);
+    let modalImage = getImage(img.image.childImageSharp);
+    console.log('modalImage',modalImage.images.fallback.src);
+    setSelectedImg(modalImage);
+    setImageAlt(img.imageAlt);
+    console.log('alt', imageAlt);
+    setModalState(!modalState);
+}
+  }
+//on click of modal exit button
+  const resetModal = () => {
+    setModalState(!modalState);
+    setSelectedImg('');
+    setImageAlt('');
+  }
   const mr = data.markdownRemark.frontmatter;
- //map over all queried images and dynamically return as GatsbyImage elements 
- const samplePics = mr.samplePics.map(pic => { 
+ //map over all queried images and dynamically return as GatsbyImage elements
+ console.log('data', data);
+ console.log('dataMarkdownRemark', data.markdownRemark)
+ console.log('mister', mr); 
+ const samplePics = mr.samplePics.map((pic, i) => { 
+   console.log('pic',pic);
    let image = getImage(pic.image.childImageSharp);
    let picAlt = pic.imageAlt;
-  return <GatsbyImage className="styledSamplePics" image={image} alt={picAlt} />
+  return <GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setSelection(pic)}} />
 })
 
  const buttonStyle = {
@@ -48,6 +85,13 @@ export default function CottageTemplate({data}) {
           <P>{mr.title === "The Elms" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</P>
 
   </div> 
+ 
+  <div className={modalState ? "modalOpen" : "modalClosed"}>
+
+<GatsbyImage image={selectedImg} alt={imageAlt}/>
+ 
+<span role="button" className="modalX" onClick={resetModal}>X</span>  
+  </div>
    <div className="samplePics">
        {samplePics}  
    </div>
@@ -63,26 +107,33 @@ export default function CottageTemplate({data}) {
     </section>
   )
 }
-//gallery returns an array of image objects
+//samplePics returns an array of image objects
 export const pageQuery = graphql`
   query($slug: String!) {
    markdownRemark(frontmatter: { slug: { eq: $slug } })  {
-    frontmatter {
+     frontmatter {
       samplePics {
         image {
           childImageSharp {
             gatsbyImageData(
-              width: 350
               placeholder: TRACED_SVG
               quality: 50
-              height: 350
               breakpoints: 10
+              transformOptions: {fit: COVER}
             )
           }
         }
         imageAlt
       }
       title
+      name
+    }
+  }
+  allFile(filter: {childImageSharp: {gatsbyImageData: {}}}) {
+    edges {
+      node {
+        name
+      }
     }
   }
 }

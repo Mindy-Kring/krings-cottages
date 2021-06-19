@@ -1,6 +1,7 @@
 ---
 title: Leos Place
 slug: /LeosPlace
+name: LeosPlace
 folder: ./markdown-pages/cottage-details
 samplePics:
   - image: ../../images/uploads/LeosPlace.jpg

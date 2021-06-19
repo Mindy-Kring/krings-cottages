@@ -67,12 +67,12 @@ return (
  
  <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
      <h2 style={h2Style}>The Birches</h2>
-<StaticImage src="../images/TheBirches.jpg" alt="the Birches" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheBirches"><StaticImage src="../images/TheBirches.jpg" alt="the Birches" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
  </div>
 
     <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Cedarview</h2>
-<StaticImage src="../images/TheCedarview.jpg" alt="the Cedarview" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheCedarview"><StaticImage src="../images/TheCedarview.jpg" alt="the Cedarview" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
