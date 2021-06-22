@@ -35,7 +35,7 @@ setName(currentPage);
      placeholder="blurred"
      layout="fixed"
    /></Navbar.Brand> 
-   <Link to="/"><Navbar.Brand href="#home" className="font-weight-bold" style= { brandSizing }>Kring's Cottages</Navbar.Brand></Link>  
+   <Navbar.Brand href="/" className="font-weight-bold" style= { brandSizing }>Kring's Cottages</Navbar.Brand> 
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" >
     <Nav className="mr-auto"> 

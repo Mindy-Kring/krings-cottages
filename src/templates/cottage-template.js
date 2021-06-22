@@ -33,38 +33,40 @@ console.log('states', selectedImg);
 
 //onClick of a cottage detail picture
 
-  const setSelection = (img) => {
+  const setSelection = (index) => {
     //check the viewport width
  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
  console.log('vw', vw);
  //only open modal if vw is greater than 600px
 if (vw > 600) {
- console.log('allImages', data.allFile.edges[0].node);
-    console.log('img', data.markdownRemark.frontmatter.name);
-    let modalImage = getImage(img.image.childImageSharp);
-    console.log('modalImage',modalImage.images.fallback.src);
-    setSelectedImg(modalImage);
-    setImageAlt(img.imageAlt);
-    console.log('alt', imageAlt);
-    setModalState(!modalState);
+//  console.log('allImages', data.allFile.edges[0].node);
+    console.log('index', index);
+    // let modalImage = getImage(img);
+    // console.log('modalImage',modalImage.images.fallback.src);
+    setSelectedImg(getImage(data.markdownRemark.frontmatter.samplePics[index].image));
+    // // setImageAlt(img.imageAlt);
+    // // console.log('alt', imageAlt);
+     setModalState(!modalState);
 }
   }
 //on click of modal exit button
   const resetModal = () => {
     setModalState(!modalState);
-    setSelectedImg('');
-    setImageAlt('');
+    // setSelectedImg('');
+    // setImageAlt('');
   }
   const mr = data.markdownRemark.frontmatter;
  //map over all queried images and dynamically return as GatsbyImage elements
  console.log('data', data);
  console.log('dataMarkdownRemark', data.markdownRemark)
  console.log('mister', mr); 
+
+ //make an array of the GatsbyImages
  const samplePics = mr.samplePics.map((pic, i) => { 
    console.log('pic',pic);
-   let image = getImage(pic.image.childImageSharp);
+   let image = getImage(pic.image);
    let picAlt = pic.imageAlt;
-  return <GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setSelection(pic)}} />
+  return <GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setSelection(i)}} />
 })
 
  const buttonStyle = {
@@ -89,6 +91,7 @@ if (vw > 600) {
   <div className={modalState ? "modalOpen" : "modalClosed"}>
 
 <GatsbyImage image={selectedImg} alt={imageAlt}/>
+
  
 <span role="button" className="modalX" onClick={resetModal}>X</span>  
   </div>
@@ -118,22 +121,14 @@ export const pageQuery = graphql`
             gatsbyImageData(
               placeholder: TRACED_SVG
               quality: 50
-              breakpoints: 10
               transformOptions: {fit: COVER}
+              breakpoints: 10
             )
           }
         }
         imageAlt
       }
       title
-      name
-    }
-  }
-  allFile(filter: {childImageSharp: {gatsbyImageData: {}}}) {
-    edges {
-      node {
-        name
-      }
     }
   }
 }

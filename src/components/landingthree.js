@@ -1,37 +1,33 @@
 import React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import { StaticImage } from "gatsby-plugin-image"
+import { getImage, StaticImage } from "gatsby-plugin-image"
+import { convertToBgImage } from "gbimage-bridge"
 import styled from 'styled-components'
 
 
 
 const LandingThree = ({ className }) => {
 
- const data = useStaticQuery(
+ const {placeholderImage} = useStaticQuery(
     graphql`
      query {
-        file(relativePath: {eq: "Twilight4.jpg"}) {
+        placeholderImage: file(relativePath: {eq: "Twilight4.jpg"}) {
     childImageSharp {
-      fluid(
-        quality: 90
-        maxWidth: 1920
-      ) {
-        base64
-        tracedSVG
-        srcWebp
-        srcSetWebp
-        originalImg
-        originalName
+      gatsbyImageData(
+       width: 800
+        placeholder: TRACED_SVG
+        quality: 80
+        transformOptions: {fit: COVER}
+      )
       }
     }
   }
-      }
+      
     `
   )
 
-  // Set ImageData.
-  const imageData = data.file.childImageSharp.fluid
+ 
 const h1 = {
     textAlign: "center",
     paddingTop: "20px"
@@ -73,12 +69,20 @@ const subTitle = {
 const parallax = {
     backgroundAttachment: "fixed"
 }
+
+ // Set ImageData.
+  const image = getImage(placeholderImage)
+  const bgImage = convertToBgImage(image)
+
 return (
     
-<BackgroundImage Tag="section"
+<BackgroundImage 
+      Tag="section"
       className={className}
-      fluid={imageData}
       style={parallax}
+      {...bgImage}
+      preserveStackingContext
+      
       >
          
   <h1 style={h1}>Sights at Kring's Cottages</h1>  
@@ -117,6 +121,6 @@ Just a few of the things you can see and do
 
 const StyledLandingThree = styled(LandingThree)`
 color: white;
-opacity: .2;
+opacity: .9;
 `
 export default StyledLandingThree;
