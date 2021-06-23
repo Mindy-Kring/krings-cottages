@@ -29,7 +29,7 @@ export default function CottageTemplate({data}) {
   //establish state
   const [modalState, setModalState] = useState(false);
   const [selectedImg, setSelectedImg] = useState(getImage(data.markdownRemark.frontmatter.samplePics[1].image));
-  const [imageAlt, setImageAlt]= useState('');
+  const [imageAlt, setImageAlt]= useState('placeholder');
 console.log('states', selectedImg);
 
 //onClick of a cottage detail picture
@@ -40,15 +40,12 @@ console.log('states', selectedImg);
  console.log('vw', vw);
  //only open modal if vw is greater than 600px
 if (vw > 600) {
-//  console.log('allImages', data.allFile.edges[0].node);
     console.log('index', index);
     console.log("thepicture", data.markdownRemark.frontmatter.samplePics[index])
-    // let modalImage = getImage(img);
-    // console.log('modalImage',modalImage.images.fallback.src);
-    setSelectedImg(getImage(data.markdownRemark.frontmatter.samplePics[index].image));
-    console.log("theALt", data.markdownRemark.frontmatter.samplePics[index].image.alt)
-    // // setImageAlt(img.imageAlt);
-    // // console.log('alt', imageAlt);
+    
+    let image = getImage(data.markdownRemark.frontmatter.samplePics[index].image);
+    setSelectedImg(image);
+    
      setModalState(!modalState);
 }
   }
@@ -70,7 +67,8 @@ if (vw > 600) {
    let image = getImage(pic.image);
    console.log('image',image);
    let picAlt = pic.imageAlt;
-  return <li key={picAlt}><GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setSelection(i)}} /></li>
+  return <li key={picAlt}><GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
+    setSelection(i)}} /></li>
 })
 
  const buttonStyle = {
@@ -98,7 +96,7 @@ if (vw > 600) {
 <GatsbyImage image={selectedImg} alt={imageAlt}/>
 
  
-<span role="button" className="modalX" onClick={resetModal}>X</span>  
+<span role="button" tabIndex={0} className="modalX" onClick={resetModal} onKeyDown={resetModal}>X</span>  
   </div>
    <ul className="samplePics">
        {samplePics}  
