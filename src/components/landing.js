@@ -83,16 +83,6 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-repeat: repeat-y;
   background-size: cover;
 `
-//   const TITLE = styled.h2`
-  
-// `
-//         const WRAPPER = styled.h1`
-//   color: white;
-//   padding-top: 8rem;
-// width: 100%;
-// height: 1000px;
-//   text-align: center; 
-// `
 const P = styled.p`
   color: white;
   font-size: calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 

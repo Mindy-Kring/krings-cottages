@@ -9,6 +9,7 @@ import CottageDetailsThreeBedroom from '../components/cottagedetailsthreebedroom
 import CottageDetailsLeosPlace from '../components/cottagedetailsleosplace'
 
 
+
  const TITLE = styled.h1`
   color: #52bc77;
   text-align: center;
@@ -27,7 +28,7 @@ export default function CottageTemplate({data}) {
 
   //establish state
   const [modalState, setModalState] = useState(false);
-  const [selectedImg, setSelectedImg] = useState('');
+  const [selectedImg, setSelectedImg] = useState(getImage(data.markdownRemark.frontmatter.samplePics[1].image));
   const [imageAlt, setImageAlt]= useState('');
 console.log('states', selectedImg);
 
@@ -41,9 +42,11 @@ console.log('states', selectedImg);
 if (vw > 600) {
 //  console.log('allImages', data.allFile.edges[0].node);
     console.log('index', index);
+    console.log("thepicture", data.markdownRemark.frontmatter.samplePics[index])
     // let modalImage = getImage(img);
     // console.log('modalImage',modalImage.images.fallback.src);
     setSelectedImg(getImage(data.markdownRemark.frontmatter.samplePics[index].image));
+    console.log("theALt", data.markdownRemark.frontmatter.samplePics[index].image.alt)
     // // setImageAlt(img.imageAlt);
     // // console.log('alt', imageAlt);
      setModalState(!modalState);
@@ -65,8 +68,9 @@ if (vw > 600) {
  const samplePics = mr.samplePics.map((pic, i) => { 
    console.log('pic',pic);
    let image = getImage(pic.image);
+   console.log('image',image);
    let picAlt = pic.imageAlt;
-  return <GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setSelection(i)}} />
+  return <li key={picAlt}><GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setSelection(i)}} /></li>
 })
 
  const buttonStyle = {
@@ -80,6 +84,7 @@ if (vw > 600) {
      flexDirection: "row",
      justifyContent: "center"
  }
+
   return (
     <section>
   <div>
@@ -95,9 +100,9 @@ if (vw > 600) {
  
 <span role="button" className="modalX" onClick={resetModal}>X</span>  
   </div>
-   <div className="samplePics">
+   <ul className="samplePics">
        {samplePics}  
-   </div>
+   </ul>
    <div>
      {mr.title === "The Elms" ? <CottageDetailsTwoBedroom /> : mr.title === "Leos Place" ? <CottageDetailsLeosPlace /> : <CottageDetailsThreeBedroom /> }
    </div>
