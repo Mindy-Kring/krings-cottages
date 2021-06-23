@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 import CottageDetailsTwoBedroom from '../components/cottagedetailstwobedroom'
 import CottageDetailsThreeBedroom from '../components/cottagedetailsthreebedroom'
-import CottageDetailsLeosPlace from '../components/cottagedetailsLeosplace'
+import CottageDetailsLeosPlace from '../components/cottagedetailsLeosPlace'
 
 
 
