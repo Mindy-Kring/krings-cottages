@@ -77,52 +77,52 @@ return (
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Brown</h2>
-<StaticImage src="../images/TheBrown.jpg" alt="the Brown" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheBrown"><StaticImage src="../images/TheBrown.jpg" alt="the Brown" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Sandpit</h2>
-<StaticImage src="../images/TheSandpit.jpg" alt="the Sandpit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheSandpit"><StaticImage src="../images/TheSandpit.jpg" alt="the Sandpit" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Hall</h2>
-<StaticImage src="../images/TheHall.jpg" alt="the Hall" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheHall"><StaticImage src="../images/TheHall.jpg" alt="the Hall" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Tamarack</h2>
-<StaticImage src="../images/TheTamarack.jpg" alt="the Tamarack" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheTamarack"><StaticImage src="../images/TheTamarack.jpg" alt="the Tamarack" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Fireplace</h2>
-<StaticImage src="../images/TheFireplace.jpg" alt="the Fireplace" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheFireplace"><StaticImage src="../images/TheFireplace.jpg" alt="the Fireplace" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Lakeview</h2>
-<StaticImage src="../images/TheLakeview.jpg" alt="the Lakeview" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheLakeview"><StaticImage src="../images/TheLakeview.jpg" alt="the Lakeview" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Pines</h2>
-<StaticImage src="../images/ThePines.jpg" alt="the Pines" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/ThePines"><StaticImage src="../images/ThePines.jpg" alt="the Pines" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Shady Rest</h2>
-<StaticImage src="../images/TheShadyRest.jpg" alt="the Shady Rest" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheShadyRest"><StaticImage src="../images/TheShadyRest.jpg" alt="the Shady Rest" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Old Rocky Point</h2>
-<StaticImage src="../images/TheOldRockyPoint.jpg" alt="the Old Rocky Point" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheOldRockyPoint"><StaticImage src="../images/TheOldRockyPoint.jpg" alt="the Old Rocky Point" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The New Rocky Point</h2>
-<StaticImage src="../images/TheNewRockyPoint.jpg" alt="the New Rocky Point" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+<Link to="/TheNewRockyPoint"><StaticImage src="../images/TheNewRockyPoint.jpg" alt="the New Rocky Point" placeholder="tracedSVG" style= {radiusedImg} width={350}/></Link>
        </div>
 
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
