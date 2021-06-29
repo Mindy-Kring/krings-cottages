@@ -27,7 +27,7 @@ setName(currentPage);
 
   return (
    
-<Navbar  className="sticky-top" expand="lg" style= { navbarStyle } >
+<Navbar collapseOnSelect className="sticky-top" expand="lg" style= { navbarStyle } >
   
   <Navbar.Brand><StaticImage
      src="../images/CanadianFlag.png"
@@ -42,28 +42,28 @@ setName(currentPage);
     <Nav.Link href="tel" >1-613-479-0028</Nav.Link>    
     </Nav>
     <Nav className="mr-0">
-      <Link to="/" className="nav-link" style={name === "/" ? {color: "white"}:
-      null}>Home</Link>
 
-      <Link to="/cottages" className="nav-link"  style={name === "/cottages" ? {color: "white"}:
-      null}>Cottages</Link>
-      
-      <Link to="/rates" className="nav-link"  style={name === "/rates" ? {color: "white"}:
-      null}>Rates</Link>
+        <Link to="/"><Nav.Link  as="span" eventKey="/" style={name === "/" ? {color: "white"}:
+      null}>Home</Nav.Link> </Link> 
 
-      <Link to="/gallery" className="nav-link"  style={name === "/gallery" ? {color: "white"}:
-      null}>Gallery</Link>
-      
-      <Link to="/directions" className="nav-link"  style={name === "/directions" ? {color: "white"}:
-      null}>Directions</Link>
 
-      <Link to="/contact" className="nav-link"  style={name === "/contact" ? {color: "white"}:
-      null}>Contact</Link>
-      
-      <Nav.Link href="/admin/" className="nav-link"  style={name === "/admin" ? {color: "white"}:
-      null}>Admin</Nav.Link>    
-      {/* <Link to="/admin/" className="nav-link"  style={name === "/admin" ? {color: "white"}:
-      null}>Admin</Link> */}
+      <Link to="/cottages"><Nav.Link as="span" eventKey="/cottages" style={name === "/cottages" ? {color: "white"}:
+      null}>Cottages</Nav.Link> </Link>
+
+            <Link to="/rates"><Nav.Link as="span" eventKey="/rates" style={name === "/rates" ? {color: "white"}:
+      null}>Rates</Nav.Link> </Link>
+
+          <Link to="/gallery"><Nav.Link as="span" eventKey="/gallery" style={name === "/gallery" ? {color: "white"}:
+      null}>Gallery</Nav.Link> </Link>
+
+          <Link to="/directions"><Nav.Link as="span" eventKey="/directions" style={name === "/directions" ? {color: "white"}:
+      null}>Directions</Nav.Link> </Link>
+
+          <Link to="/contact"><Nav.Link as="span" eventKey="/contact" style={name === "/contact" ? {color: "white"}:
+      null}>Contact</Nav.Link> </Link>
+
+          <Link to="/admin"><Nav.Link as="span" eventKey="/admin" style={name === "/admin" ? {color: "white"}:
+      null}>Admin</Nav.Link> </Link>
       
     </Nav>
   </Navbar.Collapse>

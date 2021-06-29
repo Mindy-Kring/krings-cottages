@@ -67,8 +67,8 @@ if (vw > 600) {
    let image = getImage(pic.image);
    console.log('image',image);
    let picAlt = pic.imageAlt;
-  return <li key={picAlt}><GatsbyImage className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
-    setSelection(i)}} /></li>
+  return <GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
+    setSelection(i)}} />
 })
 
  const buttonStyle = {
@@ -98,9 +98,16 @@ if (vw > 600) {
  
 <span role="button" tabIndex={0} className="modalX" onClick={resetModal} onKeyDown={resetModal}>X</span>  
   </div>
-   <ul className="samplePics">
-       {samplePics}  
-   </ul>
+  
+ <div className="samplePics">
+ {samplePics} 
+
+ </div>
+
+
+  
+       
+   
    <div>
      {mr.title === "The Elms" ? <CottageDetailsTwoBedroom /> : mr.title === "Leos Place" ? <CottageDetailsLeosPlace /> : <CottageDetailsThreeBedroom /> }
    </div>

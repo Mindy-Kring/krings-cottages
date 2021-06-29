@@ -5,7 +5,9 @@ html body {
   font-family: "Rubik";
   overflow-x: hidden;
 }
-
+div > a:hover {
+  text-decoration: none;
+}
 .gridContainer1 {
   display: flex;
   flex-direction: row;
@@ -46,15 +48,11 @@ html body {
   grid-gap: 20px 20px;
   width: 90%;
   margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
 }
 .styledSamplePics {
   border-radius: 5px;
   border: 5px solid #52bc77;
   box-shadow: 3px 5px 5px 3.5px grey;
-  min-width: 200px;
-  min-height: 280px;
 }
 .cottageDetailsContainer {
   display: grid;
@@ -85,6 +83,7 @@ html body {
   top: 20%;
   left: 25%;
   right: 25%;
+  height: 75vh;
   border: 5px solid black;
   border-radius: 8px;
   z-index: 99;
