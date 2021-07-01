@@ -23,6 +23,11 @@ const P = styled.p`
     padding-top: .5rem;
 text-Align: center;
 `
+
+
+
+
+
 export default function CottageTemplate({data}) {
 
 
@@ -31,6 +36,7 @@ export default function CottageTemplate({data}) {
   const [selectedImg, setSelectedImg] = useState(getImage(data.markdownRemark.frontmatter.samplePics[1].image));
   const [imageAlt, setImageAlt]= useState('placeholder');
 console.log('states', selectedImg);
+
 
 //onClick of a cottage detail picture
 
@@ -52,7 +58,7 @@ if (vw > 600) {
 //on click of modal exit button
   const resetModal = () => {
     setModalState(!modalState);
-    // setSelectedImg('');
+     //setSelectedImg();
     // setImageAlt('');
   }
   const mr = data.markdownRemark.frontmatter;
@@ -93,7 +99,7 @@ if (vw > 600) {
  
   <div className={modalState ? "modalOpen" : "modalClosed"}>
 
-<GatsbyImage image={selectedImg} alt={imageAlt}/>
+<GatsbyImage image={selectedImg} alt={imageAlt}/> 
 
  
 <span role="button" tabIndex={0} className="modalX" onClick={resetModal} onKeyDown={resetModal}>X</span>  
