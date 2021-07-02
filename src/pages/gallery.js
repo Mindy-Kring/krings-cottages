@@ -1,4 +1,6 @@
 import React from 'react'
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
  const TITLE = styled.h1`
@@ -16,9 +18,22 @@ text-Align: center;
 `
 
 
-const Gallery = () => {
+const Gallery = ({data}) => {
 
+const mr = data.markdownRemark.frontmatter;
+ //map over all queried images and dynamically return as GatsbyImage elements
+ console.log('data', data);
+ console.log('dataMarkdownRemark', data.markdownRemark)
+ console.log('mister', mr); 
 
+ //make an array of the GatsbyImages
+ const samplePics = mr.samplePics.map((pic, i) => { 
+   console.log('pic',pic);
+   let image = getImage(pic.image);
+   console.log('image',image);
+   let picAlt = pic.imageAlt;
+  return <GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} />
+})
     return (
 
 <div>
@@ -26,10 +41,13 @@ const Gallery = () => {
 
 <div>
     <TITLE>Gallery</TITLE>
-        <P>Lorem ipsum</P>
+        <P>Some pics of family, fish and fun over the years at Kring's</P>
 </div>
 
+<div className="galleryPics">
+ {samplePics} 
 
+ </div>
 
 
 </div>
@@ -42,3 +60,27 @@ const Gallery = () => {
 
 }
 export default Gallery;
+
+//samplePics returns an array of image objects
+export const pageQuery = graphql`
+  query {
+   markdownRemark(frontmatter: {slug: {eq: "/Gallery"}})  {
+     frontmatter {
+      samplePics {
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: TRACED_SVG
+              quality: 50
+              transformOptions: {fit: COVER}
+              breakpoints: 10
+            )
+          }
+        }
+        imageAlt
+      }
+      title
+    }
+  }
+}
+`

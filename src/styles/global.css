@@ -105,6 +105,13 @@ div > a:hover {
 .ratesTitle {
   color: #52bc77;
 }
+.galleryPics {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px 20px;
+  width: 90%;
+  margin: 0 auto;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -178,6 +185,9 @@ div > a:hover {
     padding: 10px;
   }
   .samplePics {
+    grid-template-columns: auto;
+  }
+  .galleryPics {
     grid-template-columns: auto;
   }
 }
