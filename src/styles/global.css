@@ -112,6 +112,13 @@ div > a:hover {
   width: 90%;
   margin: 0 auto;
 }
+.directionsPics {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px 20px;
+  width: 90%;
+  margin: 0 auto;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

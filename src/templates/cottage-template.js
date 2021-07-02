@@ -138,6 +138,7 @@ export const pageQuery = graphql`
             gatsbyImageData(
               placeholder: TRACED_SVG
               quality: 50
+              formats: [AUTO]
               transformOptions: {fit: COVER}
             )
           }
