@@ -73,7 +73,6 @@ export const pageQuery = graphql`
               placeholder: TRACED_SVG
               quality: 50
               transformOptions: {fit: COVER}
-              breakpoints: 10
             )
           }
         }
