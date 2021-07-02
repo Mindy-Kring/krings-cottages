@@ -29,13 +29,3 @@ collections:
               },
             ],
         }
-
-  - name: "rates-details"
-    label: "Rates Details"
-    folder: "src/markdown-pages/rates-details"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
