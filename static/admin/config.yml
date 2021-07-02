@@ -29,6 +29,7 @@ collections:
               },
             ],
         }
+
   - name: "rates-details"
     label: "Rates Details"
     folder: "src/markdown-pages/rates-details"
