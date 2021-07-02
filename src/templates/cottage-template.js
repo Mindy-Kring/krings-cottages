@@ -31,13 +31,14 @@ text-Align: center;
 export default function CottageTemplate({data}) {
 
 
+
   //establish state
   const [modalState, setModalState] = useState(false);
   const [selectedImg, setSelectedImg] = useState(getImage(data.markdownRemark.frontmatter.samplePics[1].image));
   const [imageAlt, setImageAlt]= useState('placeholder');
 console.log('states', selectedImg);
 
-
+console.log('Cottage-details data', data);
 //onClick of a cottage detail picture
 
   const setSelection = (index) => {
