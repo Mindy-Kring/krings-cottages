@@ -30,7 +30,7 @@ text-Align: center;
 
 export default function CottageTemplate({data}) {
 
-
+console.log('data', data);
 
   //establish state
   const [modalState, setModalState] = useState(false);
@@ -58,10 +58,16 @@ if (vw > 600) {
  //map over all queried images and dynamically return as GatsbyImage elements
  //make an array of the GatsbyImages
  const samplePics = mr.samplePics.map((pic, i) => { 
-   let image = getImage(pic.image);
+
+  if(pic) {
+ let image = getImage(pic.image);
    let picAlt = pic.imageAlt;
   return <GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
     setSelection(i)}} />
+  }else{
+    return null
+  }
+  
 });
  const buttonStyle = {
    backgroundColor: "#52bc77",

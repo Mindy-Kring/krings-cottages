@@ -125,10 +125,9 @@ export default Rates;
 
 export const pageQuery = graphql`
   query {
-    markdownRemark(frontmatter: {slug: {eq: "/Rates"}}) {
+    markdownRemark(frontmatter: {title: {eq: "Rates"}}) {
     html
     frontmatter {
-      slug
       title
     }
   }
