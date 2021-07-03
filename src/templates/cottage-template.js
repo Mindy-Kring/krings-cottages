@@ -29,7 +29,7 @@ text-Align: center;
 
 
 export default function CottageTemplate({data}) {
-
+console.log('data', data);
   //establish state
   const [modalState, setModalState] = useState(false);
   const [selectedImg, setSelectedImg] = useState();
@@ -96,14 +96,10 @@ return picArray
   </div>
   
  <div className="samplePics">
- {sampleImgs && window.location.pathname !== "/gallery" ? placeSamplePics(sampleImgs) : null }
+ {sampleImgs ? placeSamplePics(sampleImgs) : null }
 
  </div>
 
-
-  
-       
-   
    <div>
      {mr.title === "The Elms" ? <CottageDetailsTwoBedroom /> : mr.title === "Leos Place" ? <CottageDetailsLeosPlace /> : <CottageDetailsThreeBedroom /> }
    </div>

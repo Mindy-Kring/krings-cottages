@@ -19,7 +19,7 @@ text-Align: center;
 
 
 const Gallery = ({data}) => {
-
+console.log('gallerydata', data);
   //establish state for the samplePics
  const [sampleImgs] = useState(data.markdownRemark.frontmatter.samplePics);
  //map over all queried images and dynamically return as array of GatsbyImage elements

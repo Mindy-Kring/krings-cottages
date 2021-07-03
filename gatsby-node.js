@@ -19,7 +19,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+  
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if(node.frontmatter.slug !== "/Rates" || node.frontmatter.slug !== "/Gallery")
     createPage({
       path: node.frontmatter.slug,
       component: cottageTemplate,
