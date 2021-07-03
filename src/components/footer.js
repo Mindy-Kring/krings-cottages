@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelopeSquare, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons'
 import BtmNavbar from "../components/btmnavbar"
 
 
@@ -59,16 +60,16 @@ return (
            <p>Plevna, Ontario Canada</p>
        </li>
         <li>
-           <a href="tel:+1613-479-0028" style={{color: "#efedf5"}}>1-613-479-0028</a>
+           <a href="tel:+1613-479-0028" style={{color: "#efedf5"}}><FontAwesomeIcon  style={{fontSize: "1.5rem"}} icon={faPhoneSquareAlt} /> 1-613-479-0028</a>
        </li>
         <li>          
         <a
           style={{ color: "#efedf5" }}
-          href="mailto:kringscottages@yahoo.com"
+          href="mailto:krings_cottages@yahoo.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          kringscottages@yahoo.com
+         <FontAwesomeIcon  style={{fontSize: "1.5rem"}} icon={faEnvelopeSquare} /> krings_cottages@yahoo.com
         </a>   
        </li>
    </ul> 

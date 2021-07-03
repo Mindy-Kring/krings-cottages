@@ -57,6 +57,7 @@ div > a:hover {
 .cottageDetailsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 0.5rem;
 }
 #scrollTopBtn {
   position: fixed;
@@ -118,6 +119,19 @@ div > a:hover {
   grid-gap: 20px 20px;
   width: 90%;
   margin: 0 auto;
+}
+.contactInfoGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.buttonGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: red;
 }
 @keyframes fadeIn {
   0% {
