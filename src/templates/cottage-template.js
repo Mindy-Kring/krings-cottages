@@ -34,7 +34,7 @@ export default function CottageTemplate({data}) {
 
   //establish state
   const [modalState, setModalState] = useState(false);
-  const [selectedImg, setSelectedImg] = useState(getImage(data.markdownRemark.frontmatter.samplePics[1].image));
+  const [selectedImg, setSelectedImg] = useState();
   const [imageAlt, setImageAlt]= useState('placeholder');
 
 //onClick of a cottage detail picture
@@ -85,7 +85,7 @@ if (vw > 600) {
  
   <div className={modalState ? "modalOpen" : "modalClosed"}>
 
-<GatsbyImage image={selectedImg} alt={imageAlt}/> 
+{selectedImg ? <GatsbyImage image={selectedImg} alt={imageAlt}/> : null}
 
  
 <span role="button" tabIndex={0} className="modalX" onClick={resetModal} onKeyDown={resetModal}>X</span>  
