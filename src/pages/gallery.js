@@ -22,15 +22,9 @@ const Gallery = ({data}) => {
 
 const mr = data.markdownRemark.frontmatter;
  //map over all queried images and dynamically return as GatsbyImage elements
- console.log('data', data);
- console.log('dataMarkdownRemark', data.markdownRemark)
- console.log('mister', mr); 
-
  //make an array of the GatsbyImages
  const samplePics = mr.samplePics.map((pic, i) => { 
-   console.log('pic',pic);
    let image = getImage(pic.image);
-   console.log('image',image);
    let picAlt = pic.imageAlt;
   return <GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} />
 })
@@ -70,7 +64,10 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(
-              placeholder: TRACED_SVG
+              width: 750
+              quality: 30
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
             )
           }
         }

@@ -16,7 +16,7 @@ const LandingThree = ({ className }) => {
     childImageSharp {
       gatsbyImageData(
        width: 800
-        placeholder: TRACED_SVG
+        placeholder: BLURRED
         quality: 80
         transformOptions: {fit: COVER}
       )

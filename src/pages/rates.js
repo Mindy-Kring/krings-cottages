@@ -68,7 +68,7 @@ const Rates = ({data}) => {
 <div>
     <TITLE>{new Date().getFullYear()} Cottage and Boat Rental {frontmatter.title}</TITLE>
     <div style={bannerContainerStyle}>
-<StaticImage src="../../src/images/RatesBanner.jpg" placeholder="tracedSVG" alt="Dawn view of the dock with boats" style={ratesBannerStyle} />
+<StaticImage src="../../src/images/RatesBanner.jpg" placeholder="blurred" alt="Dawn view of the dock with boats" style={ratesBannerStyle} />
 
     </div>
   

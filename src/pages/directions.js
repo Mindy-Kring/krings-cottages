@@ -39,8 +39,8 @@ const Directions = () => {
 </header>
 
 <div className="directionsPics">
-<StaticImage src="../../src/images/Ottawa-Krings.jpg" className="styledSamplePics" placeholder="tracedSVG" alt="Map of distance and directions from Ottawa to Kring's Cottages"  />
-<StaticImage src="../../src/images/Toronto-Krings.jpg" className="styledSamplePics" placeholder="tracedSVG" alt="Map of distance and directions from Toronto to Kring's Cottages"  />
+<StaticImage src="../../src/images/Ottawa-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Ottawa to Kring's Cottages"  />
+<StaticImage src="../../src/images/Toronto-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Toronto to Kring's Cottages"  />
 </div>
 
 <div className="directionsPics">

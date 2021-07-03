@@ -18,14 +18,11 @@ const brandSizing= {
 
 const NavHeader = ( location ) => {
   const currentPage = location.location;
-  console.log('location', location);
  const [name, setName] = useState("/");
  
  useEffect(() => {
 setName(currentPage);
   }, [currentPage]);
- 
- console.log('name', name);
 
   return (
    

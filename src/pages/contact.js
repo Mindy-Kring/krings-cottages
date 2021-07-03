@@ -43,7 +43,7 @@ const Contact = () => {
 </header>
 
   <div style={bannerContainerStyle}>
-<StaticImage src="../../src/images/Contact-banner.jpg" placeholder="tracedSVG" alt="Dawn view of the dock with boats" style={contactBannerStyle} />
+<StaticImage src="../../src/images/Contact-banner.jpg" placeholder="blurred" alt="Dawn view of the dock with boats" style={contactBannerStyle} />
 
     </div>
 

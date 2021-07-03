@@ -16,7 +16,7 @@ const BackgroundSection = ({ className }) => {
     childImageSharp {
      gatsbyImageData(
        width: 800
-        placeholder: TRACED_SVG
+        placeholder: BLURRED
         quality: 100
         transformOptions: {fit: COVER}
       )
