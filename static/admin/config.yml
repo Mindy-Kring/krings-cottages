@@ -29,3 +29,37 @@ collections:
               },
             ],
         }
+
+  - name: "gallery-images"
+    label: "Gallery Images"
+    folder: "src/markdown-pages/gallery-images"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Sample Pics",
+          name: "samplePics",
+          widget: "list",
+          fields:
+            [
+              { label: "Image", name: "image", widget: "image" },
+              {
+                label: "Image Description",
+                name: "imageAlt",
+                widget: "string",
+              },
+            ],
+        }
+
+  - name: "rates-details"
+    label: "Rates Details"
+    folder: "src/markdown-pages/rates-details"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
