@@ -30,12 +30,11 @@ text-Align: center;
 
 export default function CottageTemplate({data}) {
 
-console.log('data', data);
-
   //establish state
   const [modalState, setModalState] = useState(false);
   const [selectedImg, setSelectedImg] = useState();
   const [imageAlt, setImageAlt]= useState('placeholder');
+  const [sampleImgs] = useState(data.markdownRemark.frontmatter.samplePics);
 
 //onClick of a cottage detail picture
 
@@ -55,20 +54,19 @@ if (vw > 600) {
     setModalState(!modalState);
   }
   const mr = data.markdownRemark.frontmatter;
- //map over all queried images and dynamically return as GatsbyImage elements
- //make an array of the GatsbyImages
- const samplePics = mr.samplePics.map((pic, i) => { 
+ //iterate over all queried images and dynamically return as array of GatsbyImage elements
 
-  if(pic) {
+ const placeSamplePics = (images) => {
+   let picArray = []
+images.forEach((pic, i) => { 
  let image = getImage(pic.image);
    let picAlt = pic.imageAlt;
-  return <GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
-    setSelection(i)}} />
-  }else{
-    return null
-  }
-  
-});
+  picArray.push(<GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
+    setSelection(i)}} /> ) 
+})
+return picArray
+ }
+
  const buttonStyle = {
    backgroundColor: "#52bc77",
    borderRadius: "12px", 
@@ -98,7 +96,7 @@ if (vw > 600) {
   </div>
   
  <div className="samplePics">
- {samplePics} 
+ {sampleImgs ? placeSamplePics(sampleImgs) : null }
 
  </div>
 
