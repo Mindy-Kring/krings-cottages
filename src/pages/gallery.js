@@ -19,7 +19,7 @@ text-Align: center;
 
 
 const Gallery = ({data}) => {
-  
+
   //establish state for the samplePics
  const [sampleImgs] = useState(data.markdownRemark.frontmatter.samplePics);
  //map over all queried images and dynamically return as array of GatsbyImage elements
@@ -63,7 +63,7 @@ export default Gallery;
 //samplePics returns an array of image objects
 export const pageQuery = graphql`
   query {
-   markdownRemark(frontmatter: {slug: {eq: "/Gallery"}})  {
+   markdownRemark(frontmatter: {title: {eq: "Gallery"}})  {
      frontmatter {
       samplePics {
         image {

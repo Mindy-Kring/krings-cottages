@@ -1,5 +1,5 @@
 ---
-title: Gallery Images
+title: Gallery
 slug: /Gallery
 folder: ./markdown-pages/gallery-images
 samplePics:
