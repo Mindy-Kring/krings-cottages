@@ -96,7 +96,7 @@ return picArray
   </div>
   
  <div className="samplePics">
- {sampleImgs ? placeSamplePics(sampleImgs) : null }
+ {sampleImgs && window.location.pathname !== "/gallery" ? placeSamplePics(sampleImgs) : null }
 
  </div>
 
