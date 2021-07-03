@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
@@ -19,15 +19,20 @@ text-Align: center;
 
 
 const Gallery = ({data}) => {
+  
+  //establish state for the samplePics
+ const [sampleImgs] = useState(data.markdownRemark.frontmatter.samplePics);
+ //map over all queried images and dynamically return as array of GatsbyImage elements
 
-const mr = data.markdownRemark.frontmatter;
- //map over all queried images and dynamically return as GatsbyImage elements
- //make an array of the GatsbyImages
- const samplePics = mr.samplePics.map((pic, i) => { 
-   let image = getImage(pic.image);
+ const placeSamplePics = (images) => {
+   let picArray = []
+images.forEach((pic, i) => { 
+ let image = getImage(pic.image);
    let picAlt = pic.imageAlt;
-  return <GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} />
+  picArray.push(<GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} /> ) 
 })
+return picArray
+ }
     return (
 
 <div>
@@ -39,7 +44,7 @@ const mr = data.markdownRemark.frontmatter;
 </div>
 
 <div className="galleryPics">
- {samplePics} 
+ {sampleImgs ? placeSamplePics(sampleImgs) : null }
 
  </div>
 
