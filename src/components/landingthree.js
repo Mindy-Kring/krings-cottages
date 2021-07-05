@@ -15,10 +15,8 @@ const LandingThree = ({ className }) => {
         placeholderImage: file(relativePath: {eq: "Twilight4.jpg"}) {
     childImageSharp {
       gatsbyImageData(
-       width: 800
         placeholder: BLURRED
         quality: 80
-        transformOptions: {fit: COVER}
       )
       }
     }
@@ -42,17 +40,21 @@ const imgContainerOne = {
     color: "black",
     textAlign: "center",
     borderRadius: "12px",
+    border: "ridge black 2px",
     padding: "10px",  
 }
 const radiusedImg = {
     borderRadius: "12px",
-    marginTop: "12px"
+    marginTop: "12px",
+    padding: "10px",
+    boxShadow: "3px 5px 5px 3.5px grey"
 }
 
 const imgContainerTwo = {
     backgroundColor: "rgba(82,188,119, 0.7)",
     textAlign: "center",
     borderRadius: "12px",
+    border: "ridge black 2px",
     padding: "10px",
 }
 const imgContainerThree = {
@@ -60,6 +62,7 @@ const imgContainerThree = {
     color: "black",
     textAlign: "center",
     borderRadius: "12px",
+    border: "ridge black 2px",
     padding: "10px",
 }
 const subTitle = {
@@ -96,20 +99,20 @@ Just a few of the things you can see and do
  >
     <h3>Sunsets and Campfires</h3>
     <p style={subTitle}>Enjoy gorgeous sunsets and evenings by the campfire</p>
-    <StaticImage src="../images/Sunset1.jpg" alt="Sunset" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
-    <StaticImage src="../images/FirepitWeb.jpg" alt="the firepit" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+    <StaticImage src="../images/Sunset1.jpg" alt="Sunset" placeholder="blurred" style= {radiusedImg} width={350} height={300}/>
+    <StaticImage src="../images/FirepitWeb.jpg" alt="the firepit" placeholder="blurred" style= {radiusedImg} width={350} height={300}/>
 </div>
 <div style={imgContainerTwo} data-sal="zoom-in" data-sal-easing="ease" data-sal-repeat data-sal-duration="800" >
     <h3>Cottages</h3>
     <p style={subTitle}>Our housekeeping cottages are attractive, cozy and clean and come in 2 and 3-bedroom models with all modern amenities</p>
-    <StaticImage src="../images/Cottage.jpg" alt="Cottage" placeholder="tracedSVG" style= {radiusedImg} width={350}/>  
-    <StaticImage src="../images/CottageInterior.jpg" alt="Cottage interior" placeholder="tracedSVG" style= {radiusedImg} width={350}/>
+    <StaticImage src="../images/Cottage.jpg" alt="Cottage" placeholder="blurred" style= {radiusedImg} width={350} height={300}/>  
+    <StaticImage src="../images/CottageInterior.jpg" alt="Cottage interior" placeholder="blurred" style= {radiusedImg} width={350} height={300}/>
 </div>
 <div style={imgContainerThree} data-sal="flip-up" data-sal-easing="ease" data-sal-duration="800" >
     <h3>Beach</h3>
     <p style={subTitle}>Enjoy sunny days and tranquil evenings on the soft, natural-sand beach</p>
-    <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="tracedSVG" style= {radiusedImg} width={350} />
-    <StaticImage src="../images/BeachLong.jpg" alt="Long view of the beach" placeholder="tracedSVG" style= {radiusedImg} width={350} />
+    <StaticImage src="../images/Beach.jpg" alt="The Beach" placeholder="blurred" style= {radiusedImg} width={350} height={300}/>
+    <StaticImage src="../images/BeachLong.jpg" alt="Long view of the beach" placeholder="blurred" style= {radiusedImg} width={350} height={300}/>
 </div>
 
 </div>

@@ -67,16 +67,21 @@ images.forEach((pic, i) => {
 return picArray
  }
 
- const buttonStyle = {
+  const buttonStyle = {
    backgroundColor: "#52bc77",
    borderRadius: "12px", 
-   border: "ridge white 2px", 
-  marginTop: "3rem"
+   border: "ridge white 2px",
+   width: "6rem",
+   marginTop: "1.5rem",
+   marginLeft:  ".2rem",
+   color: "rgba(0,0,0,.5)"
  }  
  const buttonDivStyle = {
-     display: "flex",
-     flexDirection: "row",
-     justifyContent: "center"
+   display: "flex",
+    justifyContent: "center"
+ }
+  const navLinkStyle = {
+   margin: "0"
  }
 
   return (
@@ -104,10 +109,13 @@ return picArray
      {mr.title === "The Elms" ? <CottageDetailsTwoBedroom /> : mr.title === "Leos Place" ? <CottageDetailsLeosPlace /> : <CottageDetailsThreeBedroom /> }
    </div>
    <div style={buttonDivStyle}>
-       <Link to="/cottages" className="nav-link" ><button type="button" className="btn" style={buttonStyle}>Cottages</button></Link>
 
-       <Link to="/rates" className="nav-link" ><button type="button" className="btn" style={buttonStyle}>Rates</button></Link>
-   </div>
+       <Link to="/cottages" style={navLinkStyle} ><button type="button" className="btn" style={buttonStyle}>Cottages</button></Link>
+   
+      
+       <Link to="/rates" style={navLinkStyle} ><button type="button" className="btn" style={buttonStyle}>Rates</button></Link>
+   
+      </div>
     
     </section>
   )

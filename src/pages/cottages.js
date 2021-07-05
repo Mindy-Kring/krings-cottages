@@ -70,11 +70,11 @@ return (
 <Link to="/TheBirches"><StaticImage src="../images/TheBirches.jpg" alt="the Birches" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
  </div>
 
-    <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Cedarview</h2>
-<Link to="/TheCedarview"><StaticImage src="../images/TheCedarview.jpg" alt="the Cedarview" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
+<div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+           <h2 style={h2Style}>The Hall</h2>
+<Link to="/TheHall"><StaticImage src="../images/TheHall.jpg" alt="the Hall" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
-
+   
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Brown</h2>
 <Link to="/TheBrown"><StaticImage src="../images/TheBrown.jpg" alt="the Brown" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
@@ -85,11 +85,11 @@ return (
 <Link to="/TheSandpit"><StaticImage src="../images/TheSandpit.jpg" alt="the Sandpit" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
 
-          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Hall</h2>
-<Link to="/TheHall"><StaticImage src="../images/TheHall.jpg" alt="the Hall" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
+ <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+           <h2 style={h2Style}>The Cedarview</h2>
+<Link to="/TheCedarview"><StaticImage src="../images/TheCedarview.jpg" alt="the Cedarview" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
-
+          
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Tamarack</h2>
 <Link to="/TheTamarack"><StaticImage src="../images/TheTamarack.jpg" alt="the Tamarack" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
@@ -110,11 +110,11 @@ return (
 <Link to="/ThePines"><StaticImage src="../images/ThePines.jpg" alt="the Pines" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
 
-          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>The Shady Rest</h2>
-<Link to="/TheShadyRest"><StaticImage src="../images/TheShadyRest.jpg" alt="the Shady Rest" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
+<div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+           <h2 style={h2Style}>Leo's Place</h2>
+<Link to="/LeosPlace"><StaticImage src="../images/LeosPlace.jpg" alt="Leo's Place" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
-
+          
           <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
            <h2 style={h2Style}>The Old Rocky Point</h2>
 <Link to="/TheOldRockyPoint"><StaticImage src="../images/TheOldRockyPoint.jpg" alt="the Old Rocky Point" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
@@ -125,12 +125,11 @@ return (
 <Link to="/TheNewRockyPoint"><StaticImage src="../images/TheNewRockyPoint.jpg" alt="the New Rocky Point" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
 
-          <div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
-           <h2 style={h2Style}>Leo's Place</h2>
-<Link to="/LeosPlace"><StaticImage src="../images/LeosPlace.jpg" alt="Leo's Place" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
+<div style={cottageImgContainer} className="cottageImgContainer1" data-sal="zoom-in" data-sal-easing="ease" data-sal-duration="800">
+           <h2 style={h2Style}>The Shady Rest</h2>
+<Link to="/TheShadyRest"><StaticImage src="../images/TheShadyRest.jpg" alt="the Shady Rest" placeholder="blurred" style= {radiusedImg} width={350}/></Link>
        </div>
- 
-
+          
    </section>
 
    <div style={buttonDivStyle}>

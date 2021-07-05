@@ -11,8 +11,8 @@ import { faEnvelopeSquare, faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome
   font-family: 'Rubik'; 
 `
 const P = styled.p`
-  color: black;
-  font-size: calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
+  color: #52bc77;
+  font-size: calc(16px + (18 - 4) * ((100vw - 200px) / (1600 - 300))); 
     font-family: 'Rubik';
     padding-top: .5rem;
 text-Align: center;
@@ -26,6 +26,9 @@ const contactBannerStyle = {
  const bannerContainerStyle = {
      margin: "0 auto",
      width: "85%",
+ }
+ const paraFontWeightStyle = {
+   fontSize: "calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300)))"
  }
 
 const Contact = () => {
@@ -49,28 +52,28 @@ const Contact = () => {
 
 <section className="contactInfoGrid">
 <div style={{textAlign: "center"}}>
-<P><FontAwesomeIcon  style={{fontSize: "2rem", color: "black"}} icon={faMapMarkerAlt} /> Address</P>
-<p>John and Mindy Kring</p>
-<p>1040 Kring's Lane, </p>
-<p>Plevna, Ontario, Canada </p>
-<p>K0H 2M0</p>
+<P><FontAwesomeIcon  style={{fontSize: "1.6rem", color: "black"}} icon={faMapMarkerAlt} /> Address</P>
+<p style={paraFontWeightStyle}>John and Mindy Kring</p>
+<p style={paraFontWeightStyle}>1040 Kring's Lane, </p>
+<p style={paraFontWeightStyle}>Plevna, Ontario, Canada </p>
+<p style={paraFontWeightStyle}>K0H 2M0</p>
 </div>
 
 <div style={{textAlign: "center"}}>
-<P><FontAwesomeIcon  style={{fontSize: "2rem", color: "black"}} icon={faPhoneSquareAlt} /> Phone</P>
-<P> (613)479-0028</P>
+<P><FontAwesomeIcon  style={{fontSize: "1.6rem", color: "black"}} icon={faPhoneSquareAlt} /> Phone</P>
+<p style={paraFontWeightStyle}> (613) 479-0028</p>
 </div>
 
 <div style={{textAlign: "center"}}>
-<P><FontAwesomeIcon  style={{fontSize: "2rem", color: "black"}} icon={faEnvelopeSquare} /> Email</P>
-<P><a
+<P><FontAwesomeIcon  style={{fontSize: "1.6rem", color: "black"}} icon={faEnvelopeSquare} /> Email</P>
+<p style={paraFontWeightStyle}><a
           style={{ color: "black" }}
           href="mailto:krings_cottages@yahoo.com"
           target="_blank"
           rel="noopener noreferrer"
         >
            krings_cottages@yahoo.com
-        </a>   </P>
+        </a>   </p>
 </div>
 
 

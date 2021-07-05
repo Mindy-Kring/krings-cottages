@@ -74,9 +74,14 @@ This third-generation business offers families and fishermen experiences and mem
 last a lifetime.</p>
 <div style={container}>
 
-   <StaticImage src="../images/DroneImg.jpg" alt="Drone view of the beach" placeholder="blurred" style={{
-   borderRadius: "12px", 
-   border: "ridge black 2px"}}width={600}/>
+   <StaticImage src="../images/DroneImg.jpg" alt="Drone view of the beach" placeholder="blurred" 
+   style={{
+   borderRadius: "12px",
+   marginLeft: "10px",
+   marginRight: "10px", 
+   border: "ridge black 2px"}} 
+   width={600}/>
+
    
    
 <div style={List}>

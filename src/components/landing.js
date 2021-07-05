@@ -15,10 +15,8 @@ const BackgroundSection = ({ className }) => {
         placeholderImage: file(relativePath: {eq: "LandingPic.jpg"}) {
     childImageSharp {
      gatsbyImageData(
-       width: 800
         placeholder: BLURRED
         quality: 100
-        transformOptions: {fit: COVER}
       )
     }
   }

@@ -39,25 +39,26 @@ const Directions = () => {
 </header>
 
 <div className="directionsPics">
-<StaticImage src="../../src/images/Ottawa-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Ottawa to Kring's Cottages"  />
-<StaticImage src="../../src/images/Toronto-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Toronto to Kring's Cottages"  />
-</div>
-
-<div className="directionsPics">
     <div>
+<StaticImage src="../../src/images/Ottawa-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Ottawa to Kring's Cottages"  />
+
+        
         <P>Ottawa to Kring's</P>
              <div style={buttonDivStyle}>
 <a href="https://www.google.ca/maps/dir/Ottawa,+Ontario/Krings+Ln,+North+Frontenac,+ON/@45.1645356,-77.5994248,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4cce05b25f5113af:0x8a6a51e131dd15ed!2m2!1d-75.6971931!2d45.4215296!1m5!1m1!1s0x4cd3aecdf510d1f9:0xbcbc7ea0fb63201d!2m2!1d-77.0287976!2d44.9398322!3e0" target="_blank" rel="noreferrer"><button className="btn" style={buttonStyle} type="button">Get Directions</button></a>
-         
-        </div>
-        
     </div>
+</div>
 
-    <div>
+
+<div>
+<StaticImage src="../../src/images/Toronto-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Toronto to Kring's Cottages"  />
+
+   <div>
         <P>Toronto to Kring's</P>
         <div style={buttonDivStyle}>
 <a href="https://www.google.ca/maps/dir/Toronto,+Ontario/Krings+Ln,+North+Frontenac,+ON/@44.4275792,-79.3090486,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!2m2!1d-79.3831843!2d43.653226!1m5!1m1!1s0x4cd3aecdf510d1f9:0xbcbc7ea0fb63201d!2m2!1d-77.0287976!2d44.9398322!3e0" target="_blank" rel="noreferrer"><button className="btn" style={buttonStyle} type="button">Get Directions</button></a>
 
+</div>
         </div>
            
     </div>

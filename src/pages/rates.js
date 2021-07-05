@@ -31,13 +31,12 @@ const ratesBannerStyle = {
  const Para = {
   color: "black",
   fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))", 
-  fontFamily: 'Rubik'
+  fontFamily: 'Rubik',
 };
 
 const h3Style = {
    color: "#52bc77",
    textAlign: "center",
-   marginTop: "20px",
 };
 
 const P2 = {
@@ -50,11 +49,13 @@ color: "black",
 
 const P3 = {
 color: "black",
-  fontSize: "calc(8px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))", 
+  fontSize: "calc(12px + (16 - 6) * ((100vw - 200px) / (1600 - 300)))", 
     fontFamily: 'Rubik',
   textAlign: "center",
   margin: "0 auto",
-  padding: "10px"
+  padding: "10px",
+  paddingBottom: "0",
+  paddingTop: "0"
 };
 
 const Rates = ({data}) => {
@@ -75,12 +76,12 @@ const Rates = ({data}) => {
         <P>Our current pricing for cottages and boat/motor rentals </P>
 
 <section>
-    <div>
+    
     <div
     className="ratesGrid"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-</div>
+
 
 </section>
 
