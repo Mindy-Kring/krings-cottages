@@ -25,6 +25,11 @@ a > button:hover {
   grid-gap: 20px;
   padding: 10px;
 }
+.landingThreeWrapper {
+  background-image: url(../../src/images/Twilight4.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .cottageGrid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -38,7 +43,6 @@ a > button:hover {
   background-color: #52bc77;
   color: white;
 }
-
 .activeNavLink {
   background-color: white;
 }
@@ -205,6 +209,9 @@ a > button:hover {
     grid-template-columns: auto;
     grid-gap: 1.5rem;
     padding: 10px;
+  }
+  .cottageGrid {
+    grid-template-columns: auto;
   }
   .samplePics {
     grid-template-columns: auto;

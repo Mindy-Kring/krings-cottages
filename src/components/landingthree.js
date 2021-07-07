@@ -1,40 +1,19 @@
 import React from "react"
-import { graphql, useStaticQuery } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
-import { getImage, StaticImage } from "gatsby-plugin-image"
-import { convertToBgImage } from "gbimage-bridge"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
+const LandingThree = () => {
 
-
-const LandingThree = ({ className }) => {
-
- const {placeholderImage} = useStaticQuery(
-    graphql`
-     query {
-        placeholderImage: file(relativePath: {eq: "Twilight4.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(
-        placeholder: BLURRED
-        quality: 80
-      )
-      }
-    }
-  }
-      
-    `
-  )
-
- 
 const h1 = {
+    color: "white",
     textAlign: "center",
     paddingTop: "20px"
 }
 const h3 = {
+    color: "white",
     textAlign: "center",
     paddingTop: "10px"
 }
-
 const imgContainerOne = {
    backgroundColor: "rgba(255, 255, 255, 0.7)",
     color: "black",
@@ -49,7 +28,6 @@ const radiusedImg = {
     padding: "10px",
     boxShadow: "3px 5px 5px 3.5px grey"
 }
-
 const imgContainerTwo = {
     backgroundColor: "rgba(82,188,119, 0.7)",
     textAlign: "center",
@@ -69,25 +47,10 @@ const subTitle = {
   fontSize: "1rem",
   marginBottom: "20px"
 }
-const parallax = {
-    backgroundAttachment: "fixed"
-}
-
- // Set ImageData.
-  const image = getImage(placeholderImage)
-  const bgImage = convertToBgImage(image)
 
 return (
     
-<BackgroundImage 
-      Tag="section"
-      className={className}
-      style={parallax}
-      {...bgImage}
-      preserveStackingContext
-      
-      >
-         
+  <div className="landingThreeWrapper">       
   <h1 style={h1}>Sights at Kring's Cottages</h1>  
 
 <h5 style={h3}>
@@ -117,7 +80,7 @@ Just a few of the things you can see and do
 
 </div>
 
-</BackgroundImage>
+</div>
 
 )
 }

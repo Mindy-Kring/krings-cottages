@@ -3,8 +3,8 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 
-
  const LandingTwo = () => {
+   
  const title = {
   color: "#52bc77",
   textAlign: "center",
@@ -82,8 +82,6 @@ last a lifetime.</p>
    border: "ridge black 2px"}} 
    width={600}/>
 
-   
-   
 <div style={List}>
      <h3 style={h3Style}>Things to Do</h3>
      <ol>

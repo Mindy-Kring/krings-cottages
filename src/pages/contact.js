@@ -41,8 +41,8 @@ const Contact = () => {
 
 <header>
     <TITLE>Contact</TITLE>
-        <P>Give us a call</P>
-        <P>We'd love to hear from you</P>
+        <p style={{fontSize: "calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300)))", textAlign: "center"}}>Give us a call</p>
+        <p style={{fontSize: "calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300)))", textAlign: "center"}}>We'd love to hear from you</p>
 </header>
 
   <div style={bannerContainerStyle}>

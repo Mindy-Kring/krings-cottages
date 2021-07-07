@@ -43,7 +43,7 @@ console.log('data', data);
  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
  
  //only open modal if vw is greater than 600px
-if (vw > 600) { 
+if (vw > 800) { 
     let image = getImage(data.markdownRemark.frontmatter.samplePics[index].image);
     setSelectedImg(image);
      setModalState(!modalState);
