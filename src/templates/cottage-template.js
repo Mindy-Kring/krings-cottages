@@ -57,13 +57,18 @@ if (vw > 800) {
  //iterate over all queried images and dynamically return as array of GatsbyImage elements
 
  const placeSamplePics = (images) => {
+   console.log('images', images);
    let picArray = []
 images.forEach((pic, i) => { 
  let image = getImage(pic.image);
+ console.log('the image', image);
+ console.log('try', image.images.fallback.srcSet);
+
    let picAlt = pic.imageAlt;
   picArray.push(<GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
     setSelection(i)}} /> ) 
 })
+console.log('picArray', picArray);
 return picArray
  }
 

@@ -13,7 +13,7 @@ const navbarStyle= {
 };
 const brandSizing= {
     fontSize: "1.5rem",
-    fontFamily: "Rubik"
+    fontFamily: "Rubik",
 }
 
 const NavHeader = ( location ) => {

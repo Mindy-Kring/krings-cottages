@@ -231,6 +231,9 @@ a > button:hover {
     justify-content: center;
   }
 }
+
+@media (max-width: 800px) {
+}
 .facebookIcon:hover {
   opacity: 0.8;
 }
