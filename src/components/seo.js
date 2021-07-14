@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, title, author, keywords, lang, meta }) {
 	const { site } = useStaticQuery(
 		graphql`
 			query {
@@ -18,7 +18,8 @@ function SEO({ description, lang, meta, title }) {
 			}
 		`
 	);
-  const keywords = site.siteMetadata.keywords
+  const pageAuthor = site.siteMetadata.author
+  const siteKeywords = site.siteMetadata.keywords
 	const metaDescription = description || site.siteMetadata.description;
 	const defaultTitle = site.siteMetadata?.title;
 
@@ -28,20 +29,22 @@ function SEO({ description, lang, meta, title }) {
 				lang,
 			}}
 			title={title}
+      //this divides the tab up into two parts, the current page title and the site title
 			titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
 			meta={[
-				{
-					name: `description`,
-					content: metaDescription,
-				},
         {
-          name: `keywords`,
-          content: keywords,
-        },
-				{
 					property: `og:title`,
 					content: title,
 				},
+				{
+					name: `og:author`,
+					content: pageAuthor,
+				},
+        {
+          name: `keywords`,
+          content: siteKeywords,
+        },
+			
 				{
 					property: `og:description`,
 					content: metaDescription,
@@ -59,6 +62,8 @@ SEO.defaultProps = {
 	lang: `en`,
 	meta: [],
 	description: ``,
+  title:``,
+  author: ``,
 };
 
 SEO.propTypes = {
@@ -66,4 +71,7 @@ SEO.propTypes = {
 	lang: PropTypes.string,
 	meta: PropTypes.arrayOf(PropTypes.object),
 	title: PropTypes.string.isRequired,
+  author: PropTypes.string,
 };
+
+export default SEO;

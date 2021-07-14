@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 import styled from 'styled-components'
  const TITLE = styled.h1`
   color: #52bc77;
@@ -44,6 +45,10 @@ const radiusedImg = {
 return (
 
 <div>
+       <SEO 
+       title="Cottages for Rent"
+       description="A list of all the cottages for rent at Kring's Cottages"
+       />
 <div>
         <TITLE>Cottages</TITLE>
         <P>Click a cottage to see pics and details</P>

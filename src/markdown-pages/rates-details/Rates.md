@@ -57,7 +57,7 @@ One boat rental included with each cottage
 
 ## Motor Rental
 
-<h1 class="ratesTitle">$175.00/week or $40.00/day</h1>
+<h1 class="ratesTitle">$175.00/week or $55.00/day</h1>
 
 13% HST tax applies
 

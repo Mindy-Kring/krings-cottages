@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
 import styled from 'styled-components'
 import CottageDetailsTwoBedroom from '../components/cottagedetailstwobedroom'
 import CottageDetailsThreeBedroom from '../components/cottagedetailsthreebedroom'
@@ -83,10 +84,14 @@ return picArray
   const navLinkStyle = {
    margin: "0"
  }
-
+const pageTitle = `Images and description of ${mr.title} cottage`
   return (
     <section>
   <div>
+     <SEO 
+       title={mr.title}
+      description={pageTitle}
+       />
           <TITLE>{mr.title}</TITLE>
           <P>{mr.title === "The Elms" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</P>
 

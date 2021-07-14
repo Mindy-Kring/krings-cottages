@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
 import styled from 'styled-components'
 
  const TITLE = styled.h1`
@@ -36,7 +37,10 @@ return picArray
     return (
 
 <div>
-
+ <SEO 
+       title="Gallery of Images"
+       description="A gallery of images from Kring's Cottages"
+       />
 
 <div>
     <TITLE>Gallery</TITLE>

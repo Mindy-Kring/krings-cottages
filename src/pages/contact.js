@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeSquare, faMapMarkerAlt, faPhoneSquareAlt } from '@fortawesome/free-solid-svg-icons'
+import SEO from "../components/seo"
 
  const TITLE = styled.h1`
   color: #52bc77;
@@ -37,7 +38,10 @@ const Contact = () => {
     return (
 
 <div>
-
+ <SEO 
+       title="Contact Kring's"
+       description="A page of email, telephone and social media contacts for Kring's Cottages"
+       />
 
 <header>
     <TITLE>Contact</TITLE>

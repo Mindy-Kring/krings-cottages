@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from "gatsby"
 import styled from 'styled-components'
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
 
  const TITLE = styled.h1`
   color: #52bc77;
@@ -64,7 +65,10 @@ const Rates = ({data}) => {
     return (
 
 <div>
-
+ <SEO 
+       title="Rates for Rentals"
+       description="Current cottage and boat/motor rental rates for Kring's Cottages"
+       />
 
 <div>
     <TITLE>{new Date().getFullYear()} Cottage and Boat Rental {frontmatter.title}</TITLE>
@@ -89,7 +93,7 @@ const Rates = ({data}) => {
 <div style={Para}>
          <h3 style={h3Style}>Cottage Rental Agreement and Payment Details</h3>
           <p style= {P2}> 
-<b>Check In:</b> 12:00 P.M.</p>
+<b>Check In:</b> 2:00 P.M.</p>
 <p style= {P2}> 
 <b>Check Out:</b> 10:00 A.M.</p>
          <p style= {P3}> 

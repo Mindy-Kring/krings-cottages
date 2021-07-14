@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
 
  const TITLE = styled.h1`
   color: #52bc77;
@@ -30,7 +31,10 @@ const Directions = () => {
     return (
 
 <div>
-
+ <SEO 
+       title="Directions to Kring's"
+       description="Maps and directions to Kring's Cottages"
+       />
 
 <header>
     <TITLE>Maps and Directions</TITLE>
