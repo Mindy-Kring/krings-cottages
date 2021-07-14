@@ -38,7 +38,7 @@ setName(currentPage);
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" >
     <Nav className="mr-auto"> 
-    <Nav.Link href="tel" ><FontAwesomeIcon  style={{fontSize: "1rem"}} icon={faPhoneSquareAlt} /> 1-613-479-0028</Nav.Link>    
+    <Nav.Link href="tel:+1613-479-0028" ><FontAwesomeIcon  style={{fontSize: "1rem"}} icon={faPhoneSquareAlt} /> 1-613-479-0028</Nav.Link>    
     </Nav>
     <Nav className="mr-0">
 
