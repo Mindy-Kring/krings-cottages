@@ -11,6 +11,6 @@ samplePics:
     imageAlt: A view of the firepit from the Elms cottage.
   - image: ../../images/uploads/ElmsKitchen.jpg
     imageAlt: A view of the kitchen of the Elms cottage.
-  - image: ../../images/uploads/ElmsBathroom.jpg
+  - image: ../../images/uploads/elmsbathroom.jpg
     imageAlt: A view of the bathroom of the Elms cottage.
 ---
