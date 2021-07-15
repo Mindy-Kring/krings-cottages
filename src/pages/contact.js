@@ -65,7 +65,7 @@ const Contact = () => {
 
 <div style={{textAlign: "center"}}>
 <P><FontAwesomeIcon  style={{fontSize: "1.6rem", color: "black"}} icon={faPhoneSquareAlt} /> Phone</P>
-<p style={paraFontWeightStyle}> (613) 479-0028</p>
+<a href="tel:+1613-479-0028" style={ {fontSize: "calc(13px + (18 - 4) * ((100vw - 200px) / (1600 - 300)))", color: "black"}}>1-613-479-0028</a>
 </div>
 
 <div style={{textAlign: "center"}}>
