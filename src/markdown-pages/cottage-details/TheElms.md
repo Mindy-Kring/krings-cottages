@@ -13,4 +13,8 @@ samplePics:
     imageAlt: A view of the kitchen of the Elms cottage.
   - image: ../../images/uploads/elmsbathroom.jpg
     imageAlt: A view of the bathroom of the Elms cottage.
+  - image: ../../images/uploads/theelmsbedroomone.jpg
+    imageAlt: A view of an Elms cottage bedroom
+  - image: ../../images/uploads/theelmsbedroomtwo.jpg
+    imageAlt: Another view of an Elms cottage bedroom
 ---
