@@ -3,12 +3,12 @@ title: The Hall
 slug: /TheHall
 folder: ./markdown-pages/cottage-details
 samplePics:
-  - image: ../../images/uploads/TheHall.jpg
+  - image: ../../images/uploads/thehallext.jpg
     imageAlt: Exterior view of the Hall cottage.
-  - image: ../../images/uploads/HallFirepit.jpg
+  - image: ../../images/uploads/thehallfirepit.jpg
     imageAlt: A view of the firepit from the Hall cottage.
-  - image: ../../images/uploads/HallKitchen.jpg
+  - image: ../../images/uploads/thehallkitchen.jpg
     imageAlt: A view of the kitchen of the Hall cottage.
-  - image: ../../images/uploads/HallBathroom.jpg
+  - image: ../../images/uploads/thehallbathroom.jpg
     imageAlt: A view of the bathroom of the Hall cottage.
 ---
