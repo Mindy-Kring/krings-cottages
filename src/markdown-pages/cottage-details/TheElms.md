@@ -9,7 +9,7 @@ samplePics:
     imageAlt: A view of the lake from the Elms cottage.
   - image: ../../images/uploads/elmsfirepit.jpg
     imageAlt: A view of the firepit from the Elms cottage.
-  - image: ../../images/uploads/elmskitchen.jpg
+  - image: ../../images/uploads/theelmskitchen.jpg
     imageAlt: A view of the kitchen of the Elms cottage.
   - image: ../../images/uploads/elmsbathroom.jpg
     imageAlt: A view of the bathroom of the Elms cottage.
@@ -17,4 +17,6 @@ samplePics:
     imageAlt: A view of an Elms cottage bedroom
   - image: ../../images/uploads/theelmsbedroomtwo.jpg
     imageAlt: Another view of an Elms cottage bedroom
+  - image: ../../images/uploads/theelmsdiningroom.jpg
+    imageAlt: A view of the Elms cottage dining room
 ---
