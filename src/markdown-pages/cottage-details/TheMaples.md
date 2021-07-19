@@ -11,7 +11,7 @@ samplePics:
     imageAlt: A view of the kitchen of the Maples cottage.
   - image: ../../images/uploads/themaplesdiningroomupdated.jpg
     imageAlt: A view of the dining room of the Maples cottage.
-  - image: ../../images/uploads/themaplesbathroomupdated.jpg
+  - image: ../../images/uploads/thelakeviewbathroom.jpg
     imageAlt: A view of the bathroom of the Maples cottage.
   - image: ../../images/uploads/themaplesbedroomupdated.jpg
     imageAlt: A view of the bedroom of the Maples cottage.
