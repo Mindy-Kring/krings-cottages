@@ -99,8 +99,8 @@ a > button:hover {
   animation: fadeIn 1s ease-in;
 }
 .ratesGrid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   margin: 0 auto;
   grid-gap: 20px;
   width: 60%;
