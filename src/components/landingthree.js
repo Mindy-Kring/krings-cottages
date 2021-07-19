@@ -47,7 +47,7 @@ const subTitle = {
   fontSize: "1rem",
   marginBottom: "20px"
 }
-
+//this component use the scroll-reveal plugin to achieve scroll effects on images
 return (
     
   <div className="landingThreeWrapper">       

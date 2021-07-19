@@ -41,8 +41,5 @@ const scrollTop = () =>{
 </div>
  );
 
-
-
-
 }
 export default ScrollTopBtn;

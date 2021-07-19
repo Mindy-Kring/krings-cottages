@@ -25,12 +25,8 @@ const P = styled.p`
 text-Align: center;
 `
 
-
-
-
-
 export default function CottageTemplate({data}) {
-console.log('data', data);
+
   //establish state
   const [modalState, setModalState] = useState(false);
   const [selectedImg, setSelectedImg] = useState();

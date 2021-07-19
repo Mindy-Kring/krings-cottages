@@ -13,7 +13,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-scroll-reveal",
-    "react-magnifier",
       {
     resolve: `gatsby-source-filesystem`,
     options: {
