@@ -9,7 +9,7 @@ collections:
   - name: "cottage-details"
     label: "Cottage Details"
     folder: "src/markdown-pages/cottage-details"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
