@@ -31,7 +31,7 @@ collections:
   - name: "gallery-images"
     label: "Gallery Images"
     folder: "src/markdown-pages/gallery-images"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -53,7 +53,7 @@ collections:
   - name: "rates-details"
     label: "Rates Details"
     folder: "src/markdown-pages/rates-details"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
