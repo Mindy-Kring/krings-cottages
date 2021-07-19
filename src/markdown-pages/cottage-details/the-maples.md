@@ -16,5 +16,5 @@ samplePics:
   - image: ../../images/uploads/themapleslivingroomupdated.jpg
     imageAlt: A view of the living room of the Maples cottage.
   - image: ../../images/uploads/themaplesbathroomupdated.jpg
-    imageAlt: A view of the Maples bathroom
+    imageAlt: A view of the Maples updated bathroom.
 ---
