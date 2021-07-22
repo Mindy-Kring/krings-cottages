@@ -1,5 +1,5 @@
 import React from "react"
-
+//cottage 3 bedroom
  const CottageDetailsThreeBedroom = () => {
 
  const title = {
