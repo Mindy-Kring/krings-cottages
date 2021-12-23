@@ -6,7 +6,7 @@ import styled from 'styled-components'
  const TITLE = styled.h1`
   color: #52bc77;
   text-align: center;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem 0 1rem 0;
   font-family: 'Rubik'; 
 `
 const P = styled.p`
