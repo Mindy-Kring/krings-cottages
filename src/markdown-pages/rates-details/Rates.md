@@ -2,8 +2,8 @@
 title: Rates
 slug: /Rates
 folder: ./markdown-pages/rates-details
+description: "-"
 ---
-
 <div class="styledRatePics">
 
 ## 3-Bedroom Cottages
@@ -42,7 +42,7 @@ Off-season daily rate: $175/day plus HST
 
 ## Leo's Place Luxury 2-Bedroom Cottage
 
-<h1 class="ratesTitle">$1500/week or $4500/month</h1>
+<h1 class="ratesTitle">$1800/week or $5600/month</h1>
 
 6 people (children considered people)
 
