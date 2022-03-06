@@ -81,11 +81,7 @@ margin: "0 auto"
          <p style= {P2}> 
 This gorgeous, one-of-a-kind, lake-front cottage comes with a dock and 14-ft fibreglass boat, a screened porch and many modern amenities. With air conditioning, laundry and dishwasher, you'll experience all the comforts of home while relaxing at the lake. You'll also enjoy your own campfire ring all firewood is supplied, four Adirondack chairs and a picnic table. Gas is available for purchase on-site. 
 No pets permitted.</p>
-<h3 style={h3Style}>{new Date().getFullYear()} Rates for Leo's Place</h3>
-<p style={P3}>$1500/week</p>
-<p style={P3}>or</p>
-<p style={P3}>$4500/month</p>
-<p style={P3}>(see <Link to="/Rates">rates</Link> page for complete details)</p>
+
      </div>
    </div>  
 

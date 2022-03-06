@@ -4,7 +4,7 @@ module.exports = {
     description: `Kring's Cottages. Cottages, boats and motors for rent in Plevna, Ontario, Canada. Fishing, swimming, cottages and beaches located on 100-acres of Canadian landscape. Come experience the warm, sandy shores of Sand Lake, Ontario.`,
     author: `Terry J Reynolds`,
     keywords: `cottage, fishing, beach, Canada, trip, vacation, lake, Ontario`,
-    siteUrl: `https://cranky-morse-0965e7.netlify.app`,
+    siteUrl: `https://kringscottages.com`,
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
