@@ -1,5 +1,5 @@
 ---
-title: Leos Place
+title: Leo's Place
 slug: /LeosPlace
 name: LeosPlace
 folder: ./markdown-pages/cottage-details

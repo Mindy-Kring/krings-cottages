@@ -89,7 +89,7 @@ const pageTitle = `Images and description of ${mr.title} cottage`
       description={pageTitle}
        />
           <TITLE>{mr.title}</TITLE>
-          <P>{mr.title === "The Elms" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</P>
+          <P>{mr.title === "The Elms" ? "Two-Bedroom Cottage" : mr.title === "Leo's Place" ? "Two-Bedroom Cottage" : "Three-Bedroom Cottage"}</P>
 
   </div> 
  
