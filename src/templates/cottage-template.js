@@ -107,7 +107,7 @@ const pageTitle = `Images and description of ${mr.title} cottage`
  </div>
 
    <div>
-     {mr.title === "The Elms" ? <CottageDetailsTwoBedroom /> : mr.title === "Leos Place" ? <CottageDetailsLeosPlace /> : <CottageDetailsThreeBedroom /> }
+     {mr.title === "The Elms" ? <CottageDetailsTwoBedroom /> : mr.title === "Leo's Place" ? <CottageDetailsLeosPlace /> : <CottageDetailsThreeBedroom /> }
    </div>
    <div style={buttonDivStyle}>
 
