@@ -16,7 +16,7 @@ No pets permitted
 
 One boat rental included with each cottage
 
-13% HST applies
+13% HST applies.
 
 Off-season daily rate: $200/day plus HST
 
