@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-scroll-reveal",
+    "gatsby-plugin-netlify",
       {
     resolve: `gatsby-source-filesystem`,
     options: {
