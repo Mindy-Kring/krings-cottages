@@ -8,7 +8,7 @@ description: "-"
 
 ## 3-Bedroom Cottages
 
-<h1 class="ratesTitle">$1350.00/week</h1>
+<h1 class="ratesTitle">$1095.00/week</h1>
 
 6 people (children considered people)
 
@@ -16,16 +16,16 @@ No pets permitted
 
 One boat rental included with each cottage
 
-13% HST applies.
+13% HST applies
 
-Off-season daily rate: $200/day plus HST
+Off-season daily rate: $175/day plus HST
 
 </div>
 <div class="styledRatePics">
 
 ## The Elms 2-Bedroom Cottage
 
-<h1 class="ratesTitle">$1300.00/week</h1>
+<h1 class="ratesTitle">$1070.00/week</h1>
 
 5 people (children considered people)
 
@@ -35,7 +35,7 @@ One boat rental included with each cottage
 
 13% HST applies
 
-Off-season daily rate: $200/day plus HST
+Off-season daily rate: $175/day plus HST
 
 </div>
 <div class="styledRatePics">

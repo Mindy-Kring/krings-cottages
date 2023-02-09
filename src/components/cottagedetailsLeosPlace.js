@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 
  const CottageDetailsLeosPlace = () => {
 
@@ -25,13 +25,13 @@ fontFamily: 'Rubik',
 textAlign: "center",
 margin: "0 auto"
 };
-// const P3 = {
-// color: "black",
-// fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))",  
-// fontFamily: 'Rubik',
-// textAlign: "center",
-// margin: "0 auto"
-// };
+const P3 = {
+color: "black",
+fontSize: "calc(12px + (18 - 6) * ((100vw - 200px) / (1600 - 300)))",  
+fontFamily: 'Rubik',
+textAlign: "center",
+margin: "0 auto"
+};
 const h3Style = {
 color: "#52bc77",
 textAlign: "center",
@@ -61,7 +61,7 @@ margin: "0 auto"
 <div style={List}>
      <h3 style={h3Style}>Included with each Cottage</h3>
      <ul>
-        <li>2 bedrooms, 1 queen bed, 1 king bed</li>
+        <li>2 bedrooms, each with a queen bed</li>
         <li>3-piece bathroom</li>
         <li>A/C, Propane Heat</li>
         <li>Screened Porch</li>
