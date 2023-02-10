@@ -53,7 +53,7 @@ const detailsWrapper= {
 <div style={List}>
      <h3 style={h3Style}>Included with each Cottage</h3>
      <ul>
-       <li>1 double and 2 twin beds</li>
+       <li>1 queen and 2 twin beds</li>
        <li>Gas or electric stove</li>
        <li>Toaster and coffeemaker</li>
        <li>Microwave</li>

@@ -61,7 +61,7 @@ margin: "0 auto"
 <div style={List}>
      <h3 style={h3Style}>Included with each Cottage</h3>
      <ul>
-        <li>2 bedrooms, each with a queen bed</li>
+        <li>2 bedrooms, 1 king bed, 1 queen bed</li>
         <li>3-piece bathroom</li>
         <li>A/C, Propane Heat</li>
         <li>Screened Porch</li>
