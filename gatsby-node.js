@@ -21,7 +21,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if(node.frontmatter.slug !== "/Gallery") {
+    if(node.frontmatter.slug !== "/Gallery" || node.frontmatter.slug !== "/Rates") {
     createPage({
       path: node.frontmatter.slug,
       component: cottageTemplate,
