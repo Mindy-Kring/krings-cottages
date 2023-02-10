@@ -8,7 +8,7 @@ description: "-"
 
 ## 3-Bedroom Cottages
 
-<h1 class="ratesTitle">$1095.00/week</h1>
+<h1 class="ratesTitle">$1350.00/week</h1>
 
 6 people (children considered people)
 
