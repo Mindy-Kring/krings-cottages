@@ -18,14 +18,14 @@ One boat rental included with each cottage
 
 13% HST applies
 
-Off-season daily rate: $175/day plus HST
+Off-season daily rate: $200/day plus HST
 
 </div>
 <div class="styledRatePics">
 
 ## The Elms 2-Bedroom Cottage
 
-<h1 class="ratesTitle">$1070.00/week</h1>
+<h1 class="ratesTitle">$1300.00/week</h1>
 
 5 people (children considered people)
 
