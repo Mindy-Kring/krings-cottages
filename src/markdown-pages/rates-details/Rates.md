@@ -35,7 +35,7 @@ One boat rental included with each cottage
 
 13% HST applies
 
-Off-season daily rate: $175/day plus HST
+Off-season daily rate: $200/day plus HST
 
 </div>
 <div class="styledRatePics">
