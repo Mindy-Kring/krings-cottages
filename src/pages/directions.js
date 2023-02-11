@@ -44,7 +44,7 @@ const Directions = () => {
 
 <div className="directionsPics">
     <div>
-<StaticImage src="../../src/images/Ottawa-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Ottawa to Kring's Cottages"  />
+<StaticImage src="../../src/images/Ottawa-Krings.jpg" className="styledDirectionsPics" placeholder="blurred" alt="Map of distance and directions from Ottawa to Kring's Cottages"  />
 
         
         <P>Ottawa to Kring's</P>
@@ -55,7 +55,7 @@ const Directions = () => {
 
 
 <div>
-<StaticImage src="../../src/images/Toronto-Krings.jpg" className="styledSamplePics" placeholder="blurred" alt="Map of distance and directions from Toronto to Kring's Cottages"  />
+<StaticImage src="../../src/images/Toronto-Krings.jpg" className="styledDirectionsPics" placeholder="blurred" alt="Map of distance and directions from Toronto to Kring's Cottages"  />
 
    <div>
         <P>Toronto to Kring's</P>
