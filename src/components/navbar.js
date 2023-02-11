@@ -18,6 +18,7 @@ const brandSizing= {
 
 const NavHeader = ( location ) => {
   const currentPage = location.location;
+  console.log('currentPage', currentPage);
  const [name, setName] = useState("/");
  
  useEffect(() => {
@@ -46,22 +47,22 @@ setName(currentPage);
       null}>Home</Nav.Link> </Link> 
 
 
-      <Link to="/cottages"><Nav.Link as="span" eventKey="/cottages" style={name === "/cottages" ? {color: "white"}:
+      <Link to="/cottages"><Nav.Link as="span" eventKey="/cottages" style={name === "/cottages/" ? {color: "white"}:
       null}>Cottages</Nav.Link> </Link>
 
-            <Link to="/rates"><Nav.Link as="span" eventKey="/rates" style={name === "/rates" ? {color: "white"}:
+            <Link to="/rates"><Nav.Link as="span" eventKey="/rates" style={name === "/rates/" ? {color: "white"}:
       null}>Rates</Nav.Link> </Link>
 
-          <Link to="/gallery"><Nav.Link as="span" eventKey="/gallery" style={name === "/gallery" ? {color: "white"}:
+          <Link to="/gallery"><Nav.Link as="span" eventKey="/gallery" style={name === "/gallery/" ? {color: "white"}:
       null}>Gallery</Nav.Link> </Link>
 
-          <Link to="/directions"><Nav.Link as="span" eventKey="/directions" style={name === "/directions" ? {color: "white"}:
+          <Link to="/directions"><Nav.Link as="span" eventKey="/directions" style={name === "/directions/" ? {color: "white"}:
       null}>Directions</Nav.Link> </Link>
 
-          <Link to="/contact"><Nav.Link as="span" eventKey="/contact" style={name === "/contact" ? {color: "white"}:
+          <Link to="/contact"><Nav.Link as="span" eventKey="/contact" style={name === "/contact/" ? {color: "white"}:
       null}>Contact</Nav.Link> </Link>
 
-          <Link to="/admin"><Nav.Link as="span" eventKey="/admin" style={name === "/admin" ? {color: "white"}:
+          <Link to="/admin"><Nav.Link as="span" eventKey="/admin" style={name === "/admin/" ? {color: "white"}:
       null}>Admin</Nav.Link> </Link>
       
     </Nav>

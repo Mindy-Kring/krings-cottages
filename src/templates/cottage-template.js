@@ -58,8 +58,8 @@ if (vw > 800) {
 images.forEach((pic, i) => { 
  let image = getImage(pic.image);
    let picAlt = pic.imageAlt;
-  picArray.push(<GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt} onClick={() => {setImageAlt(picAlt); 
-    setSelection(i)}} /> ) 
+  picArray.push(<button class="grid-button" onClick={() => {setImageAlt(picAlt); 
+    setSelection(i)}}><GatsbyImage key={picAlt} className="styledSamplePics" image={image} alt={picAlt}  /></button> ) 
 })
 return picArray
  }
