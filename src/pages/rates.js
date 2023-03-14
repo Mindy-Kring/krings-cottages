@@ -97,7 +97,7 @@ const Rates = ({data}) => {
 <p style= {P2}> 
 <b>Check Out:</b> 10:00 A.M.</p>
          <p style= {P3}> 
-<b>Deposits:</b> A deposit of $300.00 is required per cottage. We accept cash, e-transfer, money orders and personal cheques. Sorry, we do not accept credit or debit cards. Please make cheques payable to "Kring Lumber". Deposits will be credited to your account balance.</p>
+<b>Deposits:</b> A deposit of $500.00 is required per cottage. We accept cash, e-transfer, money orders and personal cheques. Sorry, we do not accept credit or debit cards. Please make cheques payable to "Kring Lumber". Deposits will be credited to your account balance.</p>
      </div>
 
 
