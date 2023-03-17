@@ -44,7 +44,7 @@ Off-season daily rate: $200/day plus HST
 
 <h1 class="ratesTitle">$1800/week or $5600/month</h1>
 
-6 people (children considered people)
+4 people (children considered people)
 
 No pets permitted
 
